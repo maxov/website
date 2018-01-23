@@ -13,11 +13,11 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Minimax
+title: Max Ovsiankin
 author: Max Ovsiankin
-email: maxov <at> berkeley.edu
+email: maxov [at] berkeley.edu
 description: >- # this means to ignore newlines until "baseurl:"
-  Hello! I'm a Math and Computer Science major at UC Berkeley.
+  Hello! I study Math and Computer Science at UC Berkeley.
   This blog is mainly for teaching, and my observations on life, math, and programming.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://maxov.org" # the base hostname & protocol for your site, e.g. http://example.com
