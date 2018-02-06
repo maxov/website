@@ -4,3 +4,5 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 ---
+
+# [Attendance](https://goo.gl/forms/Ls2zJdqSKTRJKG1Q2)
