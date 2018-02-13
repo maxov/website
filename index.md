@@ -8,3 +8,5 @@ layout: home
 # [Attendance](https://goo.gl/forms/Ls2zJdqSKTRJKG1Q2)
 
 # [Worksheet 1](https://drive.google.com/file/d/1mxYNvgHu_gUxFZVEhmTe_CZ8CaHy8Syv/view?usp=sharing)
+
+# [Worksheet 2](ws2.pdf)
