@@ -10,3 +10,4 @@ layout: home
 # [Worksheet 1](https://drive.google.com/file/d/1mxYNvgHu_gUxFZVEhmTe_CZ8CaHy8Syv/view?usp=sharing)
 
 # [Worksheet 2](ws2.pdf)
+# [Worksheet 3](ws3.pdf)
