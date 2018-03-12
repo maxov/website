@@ -7,7 +7,7 @@ hide_link: true
 
 March 12: Probability, Bayes, Midterm 2 review
 - [Attendance](https://goo.gl/forms/Ls2zJdqSKTRJKG1Q2)
-- Worksheet 5
+- [Worksheet 5](ws5.pdf), [solutions]()
 
 #### Past meetings
 
