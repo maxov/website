@@ -1,6 +1,6 @@
 ---
 layout: page
-title: CS Scholars 70
+title: CS Scholars 70 Spring 2018
 permalink: /teaching/70-scholars/
 hide_link: true
 ---
@@ -15,7 +15,7 @@ March 12: Probability, Bayes, Midterm 2 review
 - Feb 26 ([worksheet 3](ws3.pdf)): RSA, Polynomial Applications, Countability
 - Feb 19: Holiday
 - Feb 12 ([worksheet 2](ws2.pdf)): Midterm 1 review
-- Feb 5 ([worksheet 1](ws1.pdf): Graphs
+- Feb 5 ([worksheet 1](ws1.pdf)): Graphs
 - Feb 29 (no worksheet): Logic, Proofs, Functions
 
 #### Upcoming
