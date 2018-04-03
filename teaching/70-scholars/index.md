@@ -7,6 +7,7 @@ hide_link: true
 
 #### April 2: Announcements
 
+- Guest speaker Nate Weinman will come today!
 - [worksheet 6](ws6.pdf), [solutions](https://www.youtube.com/watch?v=oHg5SJYRHA0)
 - As soon as I find some time, I will write solutions for worksheets 1 and 2!
 - [Attendance](https://goo.gl/forms/Ls2zJdqSKTRJKG1Q2)
