@@ -5,16 +5,15 @@ permalink: /teaching/70-scholars/
 hide_link: true
 ---
 
-#### April 2: Announcements
+#### April 9: Announcements
 
-- Guest speaker Nate Weinman will come today!
-- [worksheet 6](ws6.pdf), [solutions](https://www.youtube.com/watch?v=oHg5SJYRHA0)
 - As soon as I find some time, I will write solutions for worksheets 1 and 2!
 - [Attendance](https://goo.gl/forms/Ls2zJdqSKTRJKG1Q2)
 
 
 #### Past meetings
 
+- April 2 ([worksheet 6](ws6.pdf), [solutions](ws6-sol.pdf)): Guest speaker Nate Weinman! Random Variables
 - March 19: No meeting, **CS 70 Midterm 2**, March 19, 7-9pm
 - March 12 ([worksheet 5](ws5.pdf), [solutions](ws5-sol.pdf)): Probability, Bayes, Midterm 2 review
 - March 5 ([worksheet 4](ws4.pdf), [solutions](ws4-sol.pdf)): Uncountability, Uncomputability, Counting
