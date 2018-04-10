@@ -7,6 +7,7 @@ hide_link: true
 
 #### April 9: Announcements
 
+- April 9 ([worksheet 7](ws7.pdf)): Continuous Probability, Joint Distributions
 - As soon as I find some time, I will write solutions for worksheets 1 and 2!
 - [Attendance](https://goo.gl/forms/Ls2zJdqSKTRJKG1Q2)
 
