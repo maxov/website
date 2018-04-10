@@ -15,7 +15,7 @@ hide_link: true
 #### Past meetings
 
 - April 2 ([worksheet 6](ws6.pdf), [solutions](ws6-sol.pdf)): Guest speaker Nate Weinman! Random Variables
-- March 19: No meeting, **CS 70 Midterm 2**, March 19, 7-9pm
+- March 19: No meeting, **CS 70 Midterm 2**, 7-9pm
 - March 12 ([worksheet 5](ws5.pdf), [solutions](ws5-sol.pdf)): Probability, Bayes, Midterm 2 review
 - March 5 ([worksheet 4](ws4.pdf), [solutions](ws4-sol.pdf)): Uncountability, Uncomputability, Counting
 - Feb 26 ([worksheet 3](ws3.pdf), [solutions](ws3-sol.pdf)): RSA, Polynomial Applications, Countability
