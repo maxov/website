@@ -5,15 +5,15 @@ permalink: /teaching/70-scholars/
 hide_link: true
 ---
 
-#### April 9: Announcements
+#### April 16: Announcements
 
-- April 9 ([worksheet 7](ws7.pdf)): Continuous Probability, Joint Distributions
 - As soon as I find some time, I will write solutions for worksheets 1 and 2!
 - [Attendance](https://goo.gl/forms/Ls2zJdqSKTRJKG1Q2)
 
 
 #### Past meetings
 
+- April 9 ([worksheet 7](ws7.pdf), [solutions](ws7-sol.pdf)): Continuous Probability, Joint Distributions
 - April 2 ([worksheet 6](ws6.pdf), [solutions](ws6-sol.pdf)): Guest speaker Nate Weinman! Random Variables
 - March 19: No meeting, **CS 70 Midterm 2**, 7-9pm
 - March 12 ([worksheet 5](ws5.pdf), [solutions](ws5-sol.pdf)): Probability, Bayes, Midterm 2 review
