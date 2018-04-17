@@ -3,7 +3,4 @@ layout: page
 title: Teaching
 ---
 
-
-### Spring 2018
-
-#### [CS Scholars](70-scholars)
+#### [CS Scholars 70, Spring 2018](70-scholars)
