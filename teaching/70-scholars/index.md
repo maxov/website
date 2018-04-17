@@ -7,7 +7,8 @@ hide_link: true
 
 #### April 16: Announcements
 
-- As soon as I find some time, I will write solutions for worksheets 1 and 2!
+- [worksheet 8](ws8.pdf): Continuous and Joint Distributions Practice
+- As soon as I find some time (OK!! very likely this weekend, finally), I will write solutions for worksheets 1 and 2!
 - [Attendance](https://goo.gl/forms/Ls2zJdqSKTRJKG1Q2)
 
 
