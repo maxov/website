@@ -7,7 +7,7 @@ hide_link: true
 
 #### April 30: Announcements
 
-- Likely topics: Inequalities, Conditional Expectation, Estimation, Markov (maybe)
+- [worksheet 9](ws9.pdf): Inequalities, Estimation, Markov Chains
 - Our last meeting together! :'(
 - Depending on interest, I will host a CS 70-scholars only mock final. Will take poll during class.
 - As soon as I find some time (OK!! very likely this weekend, finally), I will write solutions for worksheets 1 and 2!
