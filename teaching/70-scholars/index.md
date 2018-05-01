@@ -7,16 +7,16 @@ hide_link: true
 
 #### April 30: Announcements
 
-- [worksheet 9](ws9.pdf): Inequalities, Estimation, Markov Chains
-- Our last meeting together! :'(
-- Depending on interest, I will host a CS 70-scholars only mock final. Will take poll during class.
-- As soon as I find some time (OK!! very likely this weekend, finally), I will write solutions for worksheets 1 and 2!
-- [Attendance](https://goo.gl/forms/Ls2zJdqSKTRJKG1Q2)
+- [Mock final](mock-final.pdf)
 - It was a really special and fantastic experience for me to teach you all! If you couldn't tell, I could talk about math and CS all day, so please send me email if you have questions about classes, cool topics, or thoughts on life in general. Best of luck on the CS 70 final!
+
+<!-- - As soon as I find some time (OK!! very likely this weekend, finally), I will write solutions for worksheets 1 and 2! -->
+<!-- - [Attendance](https://goo.gl/forms/Ls2zJdqSKTRJKG1Q2) -->
 
 
 #### Past meetings
 
+- April 23 ([worksheet 9](ws9.pdf)): Inequalities, Estimation, Markov Chains
 - April 16 ([worksheet 8](ws8.pdf), [solutions](ws8-sol.pdf)): Continuous and Joint Distributions Practice
 - April 9 ([worksheet 7](ws7.pdf), [solutions](ws7-sol.pdf)): Continuous Probability, Joint Distributions
 - April 2 ([worksheet 6](ws6.pdf), [solutions](ws6-sol.pdf)): Guest speaker Nate Weinman! Random Variables
