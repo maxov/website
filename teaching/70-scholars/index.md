@@ -27,8 +27,8 @@ hide_link: true
 - Feb 19: No meeting, holiday
 - Feb 12 ([worksheet 2](ws2.pdf)): Midterm 1 review
 - Feb 5 ([worksheet 1](ws1.pdf)): Graphs
-- Feb 29 (no worksheet): Logic, Proofs, Functions
-- Feb 22: No meeting
+- Jan 29 (no worksheet): Logic, Proofs, Functions
+- Jan 22: No meeting
 
 #### General Advice
 - Take at least an hour out of _every day_ to study CS 70. I did this when I took the class, but most days I studied more than one hour. You should minimize distractions during this hour and really try to focus on the material to make the most of your time.

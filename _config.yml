@@ -16,19 +16,21 @@
 title: Max Ovsiankin
 author: Max Ovsiankin
 email: maxov [at] berkeley.edu
-# description: >- # this means to ignore newlines until "baseurl:"
-  # Hello! I study Math and Computer Science at UC Berkeley.
-  # This blog is mainly for teaching, and my observations on life, math, and programming.
+description: >- # this means to ignore newlines until "baseurl:"
+  Max Ovsiankin
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://maxov.org" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username:  maxov
 
 # Build settings
-markdown: kramdown
-theme: minima
+markdown: Pandoc
 plugins:
   - jekyll-feed
+  - jekyll-pandoc
+pandoc:
+  extensions:
+    - mathjax
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
