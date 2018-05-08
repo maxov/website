@@ -9,7 +9,6 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     eventmachine (1.2.6)
-    execjs (2.7.0)
     ffi (1.9.23)
     forwardable-extended (2.6.0)
     http_parser.rb (0.6.0)
@@ -30,9 +29,6 @@ GEM
       safe_yaml (~> 1.0)
     jekyll-feed (0.9.3)
       jekyll (~> 3.3)
-    jekyll-katex (0.1.3)
-      execjs (~> 2.7)
-      jekyll (~> 3.5)
     jekyll-pandoc (2.0.1)
       jekyll (>= 3.0)
       pandoc-ruby (~> 2.0, >= 2.0.0)
@@ -44,6 +40,9 @@ GEM
       jekyll (~> 3.3)
     jekyll-watch (2.0.0)
       listen (~> 3.0)
+    jgd (1.11)
+      jekyll (>= 1.5.1)
+      trollop (= 2.1.2)
     kramdown (1.16.2)
     liquid (4.0.0)
     listen (3.1.5)
@@ -70,6 +69,7 @@ GEM
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
+    trollop (2.1.2)
 
 PLATFORMS
   ruby
@@ -77,9 +77,9 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 3.8.1)
   jekyll-feed (~> 0.6)
-  jekyll-katex
   jekyll-pandoc
   jekyll-redirect-from
+  jgd
   minima (~> 2.0)
   tzinfo-data
 
