@@ -25,6 +25,8 @@
             <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
             {% endif %}
           {% endfor %}
+          <a class="page-link" href="{{ '/writing/' | relative_url }}">{{ "Writing" | escape }}</a>
+          <a class="page-link" href="{{ '/resume.pdf' | relative_url }}">{{ "Resume" | escape }}</a>
         </div>
       </nav>
     {% endif %}
