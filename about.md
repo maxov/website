@@ -23,5 +23,3 @@ This summer, I will be working at Twitter on the Scala tooling team.
 I seriously started liking mathematics when I came to Berkeley and took CS 70.
 The class showed me how important math was to being a good software engineer,
 and sparked my interest in math beyond applications to software engineering.
-An area of math closely tied to computer science, like machine learning, programming languages,
-or topics in theoretical CS, seems like a good bet for my future studies.
