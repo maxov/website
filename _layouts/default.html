@@ -5,7 +5,17 @@
 
   <body>
 
-    {% include header.html %}
+    <header class="site-header" role="banner">
+        <div class="wrapper">
+          {% assign default_paths = site.pages | where_exp: "item", "item.hide_link != true" | map: "path" %}
+          {% assign page_paths = site.header_pages | default: default_paths %}
+          <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+          
+          {% if page_paths %}
+            {% include nav.html %}
+          {% endif %}
+      </div>
+    </header>
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">

@@ -6,6 +6,7 @@ permalink: /teaching/
 
 ### Fall 2018
 
+- [CS 170](170-fa18)
 - [IMT](http://imt-decal.org)
 - CSM 70
 

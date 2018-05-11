@@ -266,3 +266,11 @@
     }
   }
 }
+
+.pull-right {
+  @extend %clearfix;
+  p {
+    float: right;
+    
+  }
+}

@@ -147,11 +147,11 @@ blockquote {
  * Code formatting
  */
 pre,
-code {
+/*code*/ {
   @include relative-font-size(0.9375);
-  border: 1px solid $grey-color-light;
+  // border: 1px solid $grey-color-light;
   border-radius: 3px;
-  background-color: #eef;
+  background-color: $code-background-color;
 }
 
 code {
@@ -166,6 +166,10 @@ pre {
     border: 0;
     padding-right: 0;
     padding-left: 0;
+  }
+
+  &.sourceCode {
+    overflow: auto !important;
   }
 }
 
@@ -250,5 +254,56 @@ table {
   }
   td {
     border: 1px solid $grey-color-light;
+  }
+}
+
+.footnotes {
+  a:last-child {
+    font-family: sans-serif;
+  }
+}
+
+.home-page {
+  background: $grey-blue-color;
+  margin-top: 100px;
+  padding-left: 0;
+
+  @include media-query($on-palm) {
+    margin-top: 0;
+  }
+
+  .main-title a {
+    font-weight: 600;
+    letter-spacing: -1px;
+    &,
+    &:visited {
+      color: $grey-color-dark;
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: darken($grey-color-dark, 10%);
+    }
+  }
+
+  .main-img {
+    height: 300px;
+    width: 200px;
+    float: left;
+    color: transparent;
+    background-image: url('/profile_big.jpg');
+    background-size: cover;
+    background-position-x: center;
+  }
+
+  .main-content {
+    height: 250px;
+    float: left;
+    padding-left: 50px;
+    padding-top: 50px;
+  }
+
+  .site-nav {
+    float: left;
   }
 }

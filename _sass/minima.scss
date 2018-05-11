@@ -19,6 +19,7 @@ $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 
 $grey-blue-color: hsl(215, 20%, 94%);
+$code-background-color: hsl(215, 29%, 97%);
 $nav-color: #555;
 
 $table-text-align: left !default;
@@ -50,5 +51,6 @@ $on-laptop:        800px !default;
 @import
   "minima/base",
   "minima/layout",
-  "minima/syntax-highlighting"
+  "minima/syntax-highlighting",
+  "pygments"
 ;

@@ -5,11 +5,17 @@
 
   <body>
 
-    {% include header.html %}
-
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
+    <main aria-label="Content">
+      <div class="wrapper home-page">
+        <div class="main-img">empty</div>
+        <div class="main-content">
+            <h1 class="main-title">
+             <a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+            </h1>
+            {% assign default_paths = site.pages | where_exp: "item", "item.hide_link != true" | map: "path" %}
+            {% assign page_paths = site.header_pages | default: default_paths %}
+            {% include nav.html %}
+        </div>
       </div>
     </main>
 
