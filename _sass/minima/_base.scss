@@ -297,10 +297,16 @@ table {
   }
 
   .main-content {
+    max-width: 450px;
     height: 250px;
     float: left;
     padding-left: 50px;
     padding-top: 50px;
+
+    p {
+      word-wrap: break-word;
+      float: left;
+    }
   }
 
   .site-nav {
