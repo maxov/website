@@ -13,7 +13,7 @@
              <a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
             </h1>
             <p>Hi! I study Math and Computer Science at UC Berkeley. <br/>
-                You may know me as a CS 170 TA, CSM mentor, or web dev UPE officer.</p>
+                You may know me as a CSM mentor, or web dev UPE officer.</p>
 
             {% assign default_paths = site.pages | where_exp: "item", "item.hide_link != true" | map: "path" %}
             {% assign page_paths = site.header_pages | default: default_paths %}
