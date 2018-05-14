@@ -12,7 +12,9 @@
           <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
           
           {% if page_paths %}
-            {% include nav.html %}
+            <nav class="site-nav nav-collapse">
+              {% include nav.html %}
+            </nav>
           {% endif %}
       </div>
     </header>

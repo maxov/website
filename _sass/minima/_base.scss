@@ -267,9 +267,12 @@ table {
   background: $grey-blue-color;
   margin-top: 100px;
   padding-left: 0;
+  padding-right: 0;
+  max-width: 800px;
 
-  @include media-query($on-palm) {
+  @include media-query($on-laptop) {
     margin-top: 0;
+    max-width: 400px;
   }
 
   .main-title a {
@@ -294,6 +297,13 @@ table {
     background-image: url('/profile_md.jpg');
     background-size: cover;
     background-position-x: center;
+
+    @include media-query($on-laptop) {
+      max-width: 400px;
+      width: 100%;
+      margin: 0 auto;
+      float: none;
+    }
   }
 
   .main-content {
@@ -306,6 +316,13 @@ table {
     p {
       word-wrap: break-word;
       float: left;
+    }
+    @include media-query($on-laptop) {
+      padding: 20px;
+      height: auto;
+      br {
+        display: none;
+      }
     }
   }
 
