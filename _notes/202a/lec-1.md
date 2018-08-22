@@ -72,7 +72,7 @@ __Examples__
   - $d_1(v, w) = \sum | \alpha_j - \beta_j |$
   - $d_\infty(v, w) = \sup_j \{ | \alpha_j - \beta_j \}$ (if finite, then simple $\max$)
   - $d_p(v, w) = {\left(\sum (\alpha_j - \beta_j)^p\right)}^{(1/p)}$, $1 \leq p < \infty$
-- If $S \subset X$, then the restriction of $d$ to $S$ is a metric on $S$.
+- If $S \subset X$, then $d|_S$, the restriction of $d$ to $S$ is a metric on $S$.
 
 __Definition 1.3.__ Let $V$ be a vector space over $\mathbb{R}$ or $\mathbb{C}$.
 By a _norm_ on $V$ we mean a function $\| \cdot \| \colon V \to \mathbb{R}^+$ where:
@@ -119,7 +119,7 @@ We can build different categories between metric spaces depending on what functi
 
 Some assorted remarks:
 
-- Let $(X, d)$ be a metric space, and $S \subset X$. Then $d |_S$ is the inclusion map, which is an isometry.
+- Let $(X, d)$ be a metric space, and $S \subset X$. Then $f \colon S \to X$ with $x \mapsto x$ is the inclusion map, which is an isometry.
 - If $f$ is isometric and also onto, then $f$ is viewed as an _isomorphism_ between $(X, d_X)$ and $(Y, d_Y)$.
 - The Lipschitz definition is used in the existence theorem for solutions of ODEs.
 - Lipschitz implies uniformly continuous
