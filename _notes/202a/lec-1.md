@@ -88,8 +88,8 @@ __Examples__
 
 - On $\mathbb{R}^n$ or $\mathbb{C}^n$:
   - $\| v \|_1 = \sum | \alpha_j |$
-  - $\| v \|_2 = \{\left(\sum |\alpha_j|^2 \right)\}^{(1/2)}$ 
-  - $\| v \|_p = \{\left(\sum |\alpha_j|^p \right)\}^{(1/p)}$ 
+  - $\| v \|_2 = {\left(\sum |\alpha_j|^2 \right)}^{(1/2)}$ 
+  - $\| v \|_p = {\left(\sum |\alpha_j|^p \right)}^{(1/p)}$ 
   - $\| v \|_\infty = \max_j \{  | v_j| \}$
 - Now we get more into the functional analysis sort of things. Let $V = C([0, 1])$, the vector space of continuous functions from the unit interval $[0, 1]$ to $\mathbb{R}$.
   - $\| f \|_\infty = \sup \{ | f(r) | \ \colon r \in [0, 1] \}$, the _uniform norm_
