@@ -3,17 +3,6 @@ layout: post
 title: Quantum Computing Reading Project
 ---
 
-<!-- Ugly style tag, but couldn't figure out how else to format image -->
-<style>
-.presentation-preview {
-    text-align: center;
-    margin-top: 2em;
-}
-.presentation-preview img {
-    max-height: 20em;
-}
-</style>
-
 During spring 2018, I did a reading project under the [Berkeley DRP][berkeley-drp] on Shor's algorithm.
 Many thanks to DRP and Vyassa Baratham, my awesome graduate student mentor.
 
@@ -29,6 +18,16 @@ It goes in depth comparing quantum and classical computers, and has some detail 
 how factoring reduces to order finding.
 
 
+<!-- Ugly style tag, but couldn't figure out how else to format image -->
+<style>
+.presentation-preview {
+    text-align: center;
+    margin-top: 2em;
+}
+.presentation-preview img {
+    max-height: 20em;
+}
+</style>
 
 <div class="presentation-preview">
 [
