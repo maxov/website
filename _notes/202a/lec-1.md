@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Math 202A Lecture 1
+title: "Math 202A Lec 1: Administrivia, Metric Spaces"
 date: 2018-08-22
 ---
 
