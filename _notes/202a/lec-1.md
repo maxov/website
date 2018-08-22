@@ -20,6 +20,7 @@ The closest textbook overall is Lang, but the course will not follow any text cl
       - Monday, October 29
       - Wednesday, October 31
   - Final exam
+
 - __Office hours__:
   - Office: 811 Evans
   - Monday 10-10:45 am
