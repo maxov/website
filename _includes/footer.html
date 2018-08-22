@@ -15,7 +15,7 @@
               {% endif %} -->
               </li>
               {% if site.email %}
-              <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+              {% comment %}<li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>{% endcomment %}
               <li>
                 {% include icon-github.html username=site.github_username %}
               </li>
