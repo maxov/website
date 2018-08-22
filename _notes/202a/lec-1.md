@@ -113,7 +113,7 @@ __Definition 1.5.__ Let $f \colon X \to Y$ be a function, with $X$ and $Y$ metri
 1. $f$ is _isometric_ or _an isometry_ if $d_Y(f(x_1), f(x_2)) = d_X(x_1, x_2)$ for $x_1, x_2 \in X$. (this implies it is also one to one, but $f$ need not be onto)
 2. If there is a constant, $k_f > 0$ (depending on $f$) such that $d_Y(f(x_1), f(x_2)) \leq k_f d_X(x_1, x_2)$ for $x_1, x_2 \in X$, then $f$ is said to be _Lipschitz_. The smallest $k_f$ is the _Lipschitz constant_ of $f$
 3. $f$ is _uniformly continuous_ if $\forall \epsilon > 0$ $\exists \delta > 0$ s.t. for any $x_1, x_2 \in X$, if $d_X(x_1, x_2) < \delta$ then $d_Y(f(x_1), f(x_2)) < \epsilon$.
-4. $f$ is _continuous_ if (we should all know this, fill this in) for all $p \in X$, $\forall \epsilon > 0$, $\exists \delta > 0$ s.t. for all $x \in X$, if $d_X(x, x) < \delta$ then $d_Y(f(p), f(x)) < \epsilon$.
+4. $f$ is _continuous_ if (we should all know this, fill this in) for all $p \in X$, $\forall \epsilon > 0$, $\exists \delta > 0$ s.t. for all $x \in X$, if $d_X(p, x) < \delta$ then $d_Y(f(p), f(x)) < \epsilon$.
 
 We can build different categories between metric spaces depending on what function definition we choose to look at for our "morphisms".
 
