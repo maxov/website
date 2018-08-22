@@ -120,6 +120,6 @@ We can build different categories between metric spaces depending on what functi
 Some assorted remarks:
 
 - Let $(X, d)$ be a metric space, and $S \subset X$. Then $d |_S$ is the inclusion map, which is an isometry.
-- If $f$ is also onto, then $f$ is viewed as an _isomorphism_ between $(X, d_X)$ and $(Y, d_Y)$.
+- If $f$ is isometric and also onto, then $f$ is viewed as an _isomorphism_ between $(X, d_X)$ and $(Y, d_Y)$.
 - The Lipschitz definition is used in the existence theorem for solutions of ODEs.
 - Lipschitz implies uniformly continuous
