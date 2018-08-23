@@ -1,11 +1,15 @@
 ---
 layout: page
 title: Notes
-show_nav: true
 ---
+
+As a study and reference tool, I am writing up notes from the classes I take.
+The standard disclaimer that these may not be up to date definitely applies, but I will give my
+best effort, as I will use these notes.
 
 ### Fall 2018
 
-- [Math 202A](math202a)
-- [Math 249](math249)
-- [Math 250A](math250a)
+- [Math 202A - Introduction to Topology and Analysis](math202a)
+- [Math 249 - Enumerative Combinatorics](math249)
+- [Math 250A - Groups, Rings, and Fields](math250a)
+- [Stat 210A - Theoretical Statistics](stat210a)

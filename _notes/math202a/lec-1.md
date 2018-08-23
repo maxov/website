@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "Math 202A Lec 1: Administrivia, Metric Spaces"
+title: "Math 202A Lecture 1: Administrivia, Metric Spaces"
 date: 2018-08-22
+class: math202a
 ---
 
 # Administrivia
@@ -49,7 +50,7 @@ Rieffel researches _noncommutative geometry_, which uses the same math used in q
 
 # Metric Spaces
 
-__Definition 1.1.__ Let $X$ be a set. By a _metric_ on $X$, we mean a function $d \colon X \times X \to \mathbb{R}^+$ such that:
+__Definition.__ Let $X$ be a set. By a _metric_ on $X$, we mean a function $d \colon X \times X \to \mathbb{R}^+$ such that:
 
 1. Symmetric $d(x, y) = d(y, x)$ for $x, y \in X$
 2. Triangle inequality $d(x, y) \leq d(x, z) + d(z, y)$ for $x, y, z \in X$
@@ -57,7 +58,7 @@ __Definition 1.1.__ Let $X$ be a set. By a _metric_ on $X$, we mean a function $
 
 A metric provides a specification of "distance" on a set. Note that here, $\mathbb{R}^+$ includes 0. Depending on the context it may not, or may include $+\infty$ as well.
 
-__Definition 1.2.__ If instead for 3 we only have that $d(x, x) = 0$ for $x \in X$, we say $d$ is a _semi-metric_ or
+__Definition.__ If instead for property 3 we only have that $d(x, x) = 0$ for $x \in X$, we say $d$ is a _semi-metric_ or
 _pseudo-metric_.
 
 A set can have many metrics.
@@ -74,14 +75,14 @@ __Examples__
   - $d_p(v, w) = {\left(\sum (\alpha_j - \beta_j)^p\right)}^{(1/p)}$, $1 \leq p < \infty$
 - If $S \subset X$, then $d|_S$, the restriction of $d$ to $S$ is a metric on $S$.
 
-__Definition 1.3.__ Let $V$ be a vector space over $\mathbb{R}$ or $\mathbb{C}$.
+__Definition.__ Let $V$ be a vector space over $\mathbb{R}$ or $\mathbb{C}$.
 By a _norm_ on $V$ we mean a function $\| \cdot \| \colon V \to \mathbb{R}^+$ where:
 
 1. $\| z v \| = |z| \| v \|$ for $z \in \mathbb{R}$ or $\mathbb{C}$, $v \in V$
 2. $\| v + w \| \leq \|v \| + \| w \|$
 3. If $\| v \| = 0$, then $v = 0_V$
 
-__Definition 1.4.__ If $\| \cdot \|$ only has the first two properties, we call it a _seminorm_.
+__Definition.__ If $\| \cdot \|$ only has the first two properties, we call it a _seminorm_.
 
 From a norm we get a metric on $V$ by $d(v, w) = \| v - w \|$.
 
@@ -92,6 +93,7 @@ __Examples__
   - $\| v \|_2 = {\left(\sum |\alpha_j|^2 \right)}^{(1/2)}$ 
   - $\| v \|_p = {\left(\sum |\alpha_j|^p \right)}^{(1/p)}$ 
   - $\| v \|_\infty = \max_j \{  | v_j| \}$
+
 - Now we get more into the functional analysis sort of things. Let $V = C([0, 1])$, the vector space of continuous functions from the unit interval $[0, 1]$ to $\mathbb{R}$.
   - $\| f \|_\infty = \sup \{ | f(r) | \ \colon r \in [0, 1] \}$, the _uniform norm_
   - $\| f \|_1 = \int_0^1 | f(r) | dr$, note the analogy to sums in $\| \cdot \|_1$ for finite vector spaces
@@ -108,7 +110,7 @@ This is the starting point of _category theory_, where we study objects and tran
 
 What should the appropriate functions of study be between metric spaces? Let's see some examples.
 
-__Definition 1.5.__ Let $f \colon X \to Y$ be a function, with $X$ and $Y$ metric spaces.
+__Definition.__ Let $f \colon X \to Y$ be a function, with $X$ and $Y$ metric spaces.
 
 1. $f$ is _isometric_ or _an isometry_ if $d_Y(f(x_1), f(x_2)) = d_X(x_1, x_2)$ for $x_1, x_2 \in X$. (this implies it is also one to one, but $f$ need not be onto)
 2. If there is a constant, $k_f > 0$ (depending on $f$) such that $d_Y(f(x_1), f(x_2)) \leq k_f d_X(x_1, x_2)$ for $x_1, x_2 \in X$, then $f$ is said to be _Lipschitz_. The smallest $k_f$ is the _Lipschitz constant_ of $f$
