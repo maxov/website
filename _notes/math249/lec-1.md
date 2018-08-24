@@ -3,6 +3,7 @@ layout: post
 title: "Math 249 Lecture 1: What is Enumerative Combinatorics?"
 date: 2018-08-22
 class: math249
+author: Max Ovsiankin
 ---
 
 > The following is my best attempt at capturing the lecture, it sort of breaks down with time. I would highly recommend reading Enumerative Combinatorics, Chapter 1 for a likely clearer explanation.
@@ -15,7 +16,7 @@ and Professor Serganova will be back on Wednesday.
 Enumerative combinatorics is about counting the elements in a finite set.
 Generating functions are important in enumerative combinatorics.
 
-### Binomial Coefficients
+# Binomial Coefficients
 
 $\binom{n}{k}$ represents the number of $k$-element subsets in $[n] = \{1, \ldots, n\}$.
 
@@ -28,7 +29,7 @@ We can approach this formula from a combinatorial proof perspective. On the righ
 There is also a recursive nature here, with the formula $(1+x)^n = (1+x)(1+x)^{n-1}$ related to the formula
 $\binom{n}{k} = \binom{n-1}{k} + \binom{n-1}{k-1}$.
 
-### Multisets
+# Multisets
 
 Consider objects of the form $x_1^{a_1} x_2^{a_2} \ldots x_n^{a_n}$, the multinomials in $x_1,\ldots x_n$. $k = a_1 + \ldots + a_n$ is the degree of a multinomial. How many multinomials over $x_1, \ldots x_n$ are there of degree $k$?
 
@@ -36,7 +37,7 @@ This is the number of multisets of _cardinality_ $k$ from a set of $n$ objects, 
 
 We can derive the closed form formula (I didn't really follow all of this)...
 
-$$ \sum_{a_1, \ldots a_n \geq 0 } x_1^{a_1} \ldots x_n^{a_n} = (1 + x_1 + x_1^2 + \ldots)(1 + x_2 + x_2^2 + \ldots)\ldots(1 + x_n + x_n^n + \ldots)$$
+$$ \sum_{a_1, \ldots a_n \geq 0 } x_1^{a_1} \ldots x_n^{a_n} = (1 + x_1 + x_1^2 + \ldots)(1 + x_2 + x_2^2 + \ldots)\ldots(1 + x_n + x_n^2 + \ldots)$$
 $$ = \frac{1}{(1 - x_1)(1 - x_2)\ldots(1 - x_n)}$$
 
 $$\sum_{k \geq 0} \left( \binom{n}{k} \right) x^k = (1 - x)^{-n} = \sum_{k \geq 0} \binom{-n}{k} (-x)^k$$
@@ -49,7 +50,7 @@ In chapter 4 we talk about a general framework for diophantine equations.
 
 What followed was a 10-minute exposition on convex polyhedra? and duality?, which was described as "best guess" for what chapter 4 covers.
 
-### Counting Vector Subspaces
+# Counting Vector Subspaces
 
 Consider a finite field $\mathbb{F}_q$ (the relevant theory says that $q = p^r$ for some $r > 0$ and prime $p$, but this is unimportant from a combinatorial perspective).
 
@@ -61,11 +62,11 @@ __Theorem.__ $G(n, k) = \binom{n}{k}_q$
 
 The rest I was unable to follow.
 
-### Schubert cells in Grassmanians
+# Schubert cells in Grassmanians
 
 I was unable to follow this piece. There was some discussion of matrices, reduced row echelon form, and the $\mathbb{F}^\Delta$ partition of Grassmanian space.
 
-### Permutations
+# Permutations
 
 Let's apply what principles we have developed to permutations.
 We say $S_n$ is the set of permutations of $[n]$, or the collection of all bijections on $[n]$.
