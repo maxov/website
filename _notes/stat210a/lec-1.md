@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: note
 title: "Stat 210A Lecture 1: Measure Theory, Estimation"
 date: 2018-08-23
 class: stat210a
@@ -39,7 +39,7 @@ author: Max Ovsiankin
 # Measure Theory Basics
 
 Measure theory is a rigorous grounding for probability, it is covered in more detail in Stat 205A, which is a great course.
-Some departments don't teach measure theory, Andrew Gellman has a famously poor opinion of it.
+Some departments don't teach measure theory, Andrew Gelman has a famous opinion of that.
 Fithian's personal opinion: If your optimization is research productivity for your four years as a graduate student, then
 it's probably not a good idea.
 If your optimization is for a career of good research, then it is probably a good idea.
@@ -119,12 +119,12 @@ but now we can integrate over all these probability densities by just integratin
 
 Note that densities are not, in general, unique.
 
-Consider $\varphi(x)$, the pdf of the standard normal Gaussian. Let $\varphi' = \varphi$, except $\varphi'(0) = 0. The densities are not
+Consider $\varphi(x)$, the pdf of the standard normal Gaussian. Let $\varphi' = \varphi$, except $\varphi'(0) = 0$. The densities are not
 "the same", but the induced measure will be identical.
 
 In other words, we have two densities $p_1, p_2$ for the same measure $P$. In the general case, the two densities must differ on a measure-0 set w.r.t $\mu$:
 
-$$ \mu(\{ p_1(x) \neq p_2(x) \}) = 0 $$
+$$ \mu(\{ x \in \mathscr{X} \colon p_1(x) \neq p_2(x) \}) = 0 $$
 
 # Random variables
 

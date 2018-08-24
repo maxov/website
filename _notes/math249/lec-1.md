@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: note
 title: "Math 249 Lecture 1: What is Enumerative Combinatorics?"
 date: 2018-08-22
 class: math249

@@ -11,8 +11,11 @@ layout: default
         {{ page.date | date: date_format }}
       </time>
       {% if page.author %}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
-      {% endif %}</p>
+        • Notes by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
+        (please direct questions to me!)
+      {% endif %}
+      • <a href="/notes/{{ page.class }}/">All notes for class</a>
+    </p>
   </header>
 
   <div class="post-content" itemprop="articleBody">

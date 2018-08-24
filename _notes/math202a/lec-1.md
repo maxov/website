@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: note
 title: "Math 202A Lecture 1: Administrivia, Metric Spaces"
 date: 2018-08-22
 class: math202a
@@ -22,7 +22,6 @@ The closest textbook overall is Lang, but the course will not follow any text cl
       - Monday, October 29
       - Wednesday, October 31
   - Final exam
-
 - __Office hours__:
   - Office: 811 Evans
   - Monday 10-10:45 am
@@ -122,7 +121,7 @@ We can build different categories between metric spaces depending on what functi
 
 Some assorted remarks:
 
-- Let $(X, d)$ be a metric space, and $S \subset X$. Then $f \colon S \to X$ with $x \mapsto x$ is the inclusion map, which is an isometry.
+- Let $(X, d)$ be a metric space, and $S \subset X$. Then $f \colon S \hookrightarrow X$ with $x \mapsto x$ is the inclusion map, which is an isometry.
 - If $f$ is isometric and also onto, then $f$ is viewed as an _isomorphism_ between $(X, d_X)$ and $(Y, d_Y)$.
 - The Lipschitz definition is used in the existence theorem for solutions of ODEs.
 - Lipschitz implies uniformly continuous
