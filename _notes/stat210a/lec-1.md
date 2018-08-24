@@ -8,33 +8,33 @@ author: Max Ovsiankin
 
 # Administrivia
 
-- Professor: Will fithian
+- Professor: Will Fithian
 - Statistics 210A - Intro to Statistical Theory for Statistics Phds
-  - by show of hands, the class is mostly _not_ statistics people
+    - by show of hands, the class is mostly _not_ statistics people
 - Office hours: Evans 301 (in corner) can contact via email or appt
-- GSI: \mathscr{X}iao Li, office hours TBD. GSI last year as well
+- GSI: Xiao Li, office hours TBD. GSI last year as well
 - web resources:
-  - bCourses
-  - course homepage
+    - bCourses
+    - course homepage
 - weekly assignments on Thursdays due at the start of class
 - fast paced, high workload. made to prepare for research career in statistics
 - selection of topics:
-  - statistical decision theory (bayesian, frequentist)
-  - exponential families
-  - hypothesis testing, p-values
-  - resampling, large-sample theory
-  - some of Fithian's research
+    - statistical decision theory (bayesian, frequentist)
+    - exponential families
+    - hypothesis testing, p-values
+    - resampling, large-sample theory
+    - some of Fithian's research
 - it's possible to learn statistics with a strong technical background, but getting acquainted to methods is still a challenge
-- pretty workload-heavy class, people have complained before. Should only take two like this  class at a time
+- pretty workload-heavy class, people have complained before. Should only take two like this class at a time
 - textbooks freely available online from SpringerLink with student account
 - weekly problem sets and final exam
-  - can drop lowest HW grade, save this for a good time in the semester
+    - can drop lowest HW grade, save this for a good time in the semester
 - __Collaboration:__ 
-  - challenging material, so collaboration encouraged
-  - do not consult solutions for previous iterations of this course! 
-  - collaboration policies:
-    - write up the problem yourself
-    - acknowledge who/what resources were used outside of class
+    - challenging material, so collaboration encouraged
+    - do not consult solutions for previous iterations of this course! 
+    - collaboration policies:
+        - write up the problem yourself
+        - acknowledge who/what resources were used outside of class
 
 # Measure Theory Basics
 
@@ -133,7 +133,7 @@ __Definition.__
 1. $(\Omega, \mathscr{F}, \mathbb{P})$ is a _probability space_ if $\Omega$ is a set, $\mathscr{F}$ is a $\sigma$-field over it, and $\mathbb{P}$ is a probability measure over them.
 2. $\omega \in \Omega$ is an _outcome_, $\Omega$ is the _outcome space_
 3. $A \in \mathscr{F}$ is called an _event_ ($A \subseteq \Omega$)
-4. $P(A)$ is called the _probability of $A$.
+4. $P(A)$ is called the _probability_ of $A$.
 
 __Definition.__ A _random variable_ (or _vector_) is a function $X \colon \Omega \to \mathscr{X}$ which tells us the value of $X$ for each outcome in $\Omega$. $\mathscr{X}$ is some destination space.
 
@@ -144,6 +144,28 @@ $$ P(X \in B) = \mathbb{P}(\{ \omega \colon X(\omega) \in B \}) = P(X^{-1}(B)) =
 Here $B \subseteq \mathscr{X}$, and we require it to have a measureable preimage under $X$.
 In some sense, $Q$ is "induced" by $\mathbb{P}$ and $X$.
 
+__Example.__ We flip a coin 100 times independently, with outcomes heads and tails.
+
+$\Omega = \{ H, T\}^n$, let our random variable $X(\omega) = \sum_{i=1}^n \omega_i$ count the number of heads of an outcome.
+
+Then $\mathbb{P}(X \leq 5) = Q(\{ 0, \ldots, 5 \}) = \mathbb{P}(\{ \omega \colon X(\omega) \leq 5 \})$
+
+Then $Q(B) = \int 1_B(x) \varphi(x) dx$
+
 __Definition.__ The _expectation_ $\mathbb{E}[X] = \int_{\Omega} X(\omega) d P(\omega) = \int_X x d Q(x)$.
 
-__Example.__ We flip a coin 100 times independently, with outcomes heads and tails.
+# Estimation
+
+Estimation is the first statistical problem we will consider in this class. 
+Estimation invovles introducing ambiguity over what the distribution we are considering even is.
+
+__Definition.__ A _statistical model_ is a family of candidate probability distributions:
+
+$$P = \{ P_\theta \colon \theta \in \Theta \}$$
+
+$\theta$, the _parameter_, can range over anything, not just a real number. $\Theta$ is often a subset of $\mathbb{R}^d$.
+
+The goal of estimation is that we observe some $X \sim P_\theta$, and guess the value of $g(\theta)$, the _estimand_.
+We can set $g(\theta) = \theta$, but often we are only interested in some information from $\theta$.
+
+A major theme of the rest of the semester will be how we come up with and evaluate good guesses, for example in an estimation problem.

@@ -11,22 +11,25 @@ author: Max Ovsiankin
 - [Math 202A Fall 2018: Introduction to Topology and Analysis](https://math.berkeley.edu/~rieffel/202AannF18.html)
 - __Meets__ Mon/Wed/Fri in Evans 60 From 9-10 am
 - __Lecturer__: [Marc Rieffel](https://math.berkeley.edu/~rieffel)
+
 - __Textbook__: No _required_ textbook. 4 textbooks are freely downloadable from the web with a Cal student account.
 The closest textbook overall is Lang, but the course will not follow any text closely, mirroring different texts at different times.
+
 - __Assignments__:
-  - Roughly weekly problem sets
-  - Midterm exam
-    - During regular class meeting time
-    - Potential dates: (will put to vote)
-      - Friday, October 26
-      - Monday, October 29
-      - Wednesday, October 31
-  - Final exam
+    - Roughly weekly problem sets
+    - Midterm exam
+        - During regular class meeting time
+        - Potential dates: (will put to vote)
+            - Friday, October 26
+            - Monday, October 29
+            - Wednesday, October 31
+    - Final exam
+
 - __Office hours__:
-  - Office: 811 Evans
-  - Monday 10-10:45 am
-  - Wednesday 10-10:45 am, 1:30-2:30 pm
-  - Friday 10-10:30 am
+    - Office: 811 Evans
+    - Monday 10-10:45 am
+    - Wednesday 10-10:45 am, 1:30-2:30 pm
+    - Friday 10-10:30 am
 
 # About Rieffel
 
@@ -68,11 +71,13 @@ Under the "walking" metric, the distance between two islands separated by sea ca
 __Examples__
 
 - $\mathbb{R}$ with metric $d(s, t) = |s - t|$
+
 - $\mathbb{R}^n$, with elements $v = (\alpha_j), w = (\beta_j)$
   - $d_2(v, w) = \sqrt{\sum (\alpha_j - \beta_j)^2}$ (_Euclidean_ distance)
   - $d_1(v, w) = \sum | \alpha_j - \beta_j |$
   - $d_\infty(v, w) = \sup_j \{ | \alpha_j - \beta_j \}$ (if finite, then simple $\max$)
-  - $d_p(v, w) = {\left(\sum (\alpha_j - \beta_j)^p\right)}^{(1/p)}$, $1 \leq p < \infty$
+  - $d_p(v, w) = {\left(\sum (\alpha_j - \beta_j)^p\right)}^{(1/p)}$, $1 \leq p < \infty
+  
 - If $S \subset X$, then $d|_S$, the restriction of $d$ to $S$ is a metric on $S$.
 
 __Definition.__ Let $V$ be a vector space over $\mathbb{R}$ or $\mathbb{C}$.
@@ -89,16 +94,16 @@ From a norm we get a metric on $V$ by $d(v, w) = \| v - w \|$.
 __Examples__
 
 - On $\mathbb{R}^n$ or $\mathbb{C}^n$:
-  - $\| v \|_1 = \sum | \alpha_j |$
-  - $\| v \|_2 = {\left(\sum |\alpha_j|^2 \right)}^{(1/2)}$ 
-  - $\| v \|_p = {\left(\sum |\alpha_j|^p \right)}^{(1/p)}$ 
-  - $\| v \|_\infty = \max_j \{  | v_j| \}$
+    - $\| v \|_1 = \sum | \alpha_j |$
+    - $\| v \|_2 = {\left(\sum |\alpha_j|^2 \right)}^{(1/2)}$ 
+    - $\| v \|_p = {\left(\sum |\alpha_j|^p \right)}^{(1/p)}$ 
+    - $\| v \|_\infty = \max_j \{  | v_j| \}$
 
 - Now we get more into the functional analysis sort of things. Let $V = C([0, 1])$, the vector space of continuous functions from the unit interval $[0, 1]$ to $\mathbb{R}$.
-  - $\| f \|_\infty = \sup \{ | f(r) | \ \colon r \in [0, 1] \}$, the _uniform norm_
-  - $\| f \|_1 = \int_0^1 | f(r) | dr$, note the analogy to sums in $\| \cdot \|_1$ for finite vector spaces
-  - $\| f \|_2 = \left(\int_0^1 | f(r) |^2 dr\right)^{(1/2)}$, important and used in fourier analysis
-  - $\| f \|_p = \left(\int_0^1 | f(r) |^p dr\right)^{(1/p)}$, for $1 \leq p < \infty$
+    - $\| f \|_\infty = \sup \{ | f(r) | \ \colon r \in [0, 1] \}$, the _uniform norm_
+    - $\| f \|_1 = \int_0^1 | f(r) | dr$, note the analogy to sums in $\| \cdot \|_1$ for finite vector spaces
+    - $\| f \|_2 = \left(\int_0^1 | f(r) |^2 dr\right)^{(1/2)}$, important and used in fourier analysis
+    - $\| f \|_p = \left(\int_0^1 | f(r) |^p dr\right)^{(1/p)}$, for $1 \leq p < \infty$
 
 A metric space could have a variety of metrics defined on it, and a vector space could have a variety of norms.
 In functional analysis, for instance, our spaces are metric/vector spaces of functions.
