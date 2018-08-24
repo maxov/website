@@ -11,10 +11,8 @@ author: Max Ovsiankin
 - [Math 202A Fall 2018: Introduction to Topology and Analysis](https://math.berkeley.edu/~rieffel/202AannF18.html)
 - __Meets__ Mon/Wed/Fri in Evans 60 From 9-10 am
 - __Lecturer__: [Marc Rieffel](https://math.berkeley.edu/~rieffel)
-
 - __Textbook__: No _required_ textbook. 4 textbooks are freely downloadable from the web with a Cal student account.
 The closest textbook overall is Lang, but the course will not follow any text closely, mirroring different texts at different times.
-
 - __Assignments__:
     - Roughly weekly problem sets
     - Midterm exam
@@ -24,7 +22,6 @@ The closest textbook overall is Lang, but the course will not follow any text cl
             - Monday, October 29
             - Wednesday, October 31
     - Final exam
-
 - __Office hours__:
     - Office: 811 Evans
     - Monday 10-10:45 am
