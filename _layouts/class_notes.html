@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% assign relevant_notes = site.notes | where:"class",page.class %}
+{% assign relevant_notes = site.notes | where:"class",page.class | reverse %}
 
 <div class="home">
 

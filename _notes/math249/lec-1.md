@@ -6,7 +6,7 @@ class: math249
 author: Max Ovsiankin
 ---
 
-> The following is my best attempt at capturing the lecture, it sort of breaks down with time. I would highly recommend reading Enumerative Combinatorics, Chapter 1 for a likely clearer explanation.
+> The following is my best attempt at capturing the lecture, it sort of breaks down with time. I would highly recommend reading Enumerative Combinatorics, Chapter 1 by Stanley for a likely clearer explanation.
 
 - Vera Serganova is currently touring the world, so colleagues will lecture for her for a few lectures.
 Lecture today is given by Alexander Givental, Mariusz Wodzicki will give Friday lecture, someone Monday lecture,
