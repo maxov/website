@@ -11,7 +11,7 @@ author: Max Ovsiankin
 - Professor: Will Fithian
 - Statistics 210A - Intro to Statistical Theory for Statistics Phds
     - by show of hands, the class is mostly _not_ statistics people
-- Office hours: Evans 301 (in corner) can contact via email or appt
+- Office hours: held at different times to minimize conflicts, can also contact via email or appt, 
 - GSI: Xiao Li, office hours TBD. GSI last year as well
 - web resources:
     - bCourses
