@@ -82,7 +82,7 @@ Then in a specific way, the theory of monoids is a special case of the theory of
 <div class="box">
 __Definition.__
 
-1. A morphism $f \in \text{Hom}_\mathscr{C}(x, y)$ is an _isomorphism_/invertible if\
+1. A morphism $f \in \text{Hom}_\mathscr{C}(x, y)$ is an _isomorphism_/invertible if:\
     $\exists g \in \text{Hom}_\mathscr{C}(y, x)$ s.t. $g \circ f = \text{id}_x$ and $f \circ g = \text{id}_y$.
     (draw diagram)
 2. A category $\mathscr{C}$ is called a _groupoid_ if all morphisms are invertible.
