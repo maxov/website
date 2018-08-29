@@ -4,6 +4,7 @@ title: "Math 249 Lecture 1: What is Enumerative Combinatorics?"
 date: 2018-08-22
 class: math249
 author: Max Ovsiankin
+lecturer: Alexander Givental
 ---
 
 > The following is my best attempt at capturing the lecture, it sort of breaks down with time. I would highly recommend reading Enumerative Combinatorics, Chapter 1 by Stanley for a likely clearer explanation.

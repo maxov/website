@@ -24,7 +24,11 @@
       window.location.protocol = "https:"
     }
     document.addEventListener("DOMContentLoaded", function() {
-      renderMathInElement(document.body);
+      renderMathInElement(document.body, {
+        macros: {
+          "\\quot": "\\raisebox{0.25em}{\\text{$#1$}}\\!\\diagup\\! \\raisebox{-0.25em}{\\text{$#2$}}"
+        }
+      });
     });
     </script>
   </head>

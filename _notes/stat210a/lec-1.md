@@ -4,6 +4,7 @@ title: "Stat 210A Lecture 1: Measure Theory, Estimation"
 date: 2018-08-23
 class: stat210a
 author: Max Ovsiankin
+lecturer: Will Fithian
 ---
 
 # Administrivia
@@ -45,7 +46,9 @@ it's probably not a good idea.
 If your optimization is for a career of good research, then it is probably a good idea.
 For this class, we will simply introduce definitions and notation, and sketch the important concepts.
 
+<div class="box">
 __Definition.__ Given a set $\mathscr{X}$, a _measure_ $\mu$ maps subsets $A \subseteq \mathscr{X}$ to non-negative numbers $\mu(A) \in [0, \infty]$.
+</div>
 
 The measure quantifies the "weight" of sets.
 
@@ -63,8 +66,10 @@ As the theory says, it's impossible to consistently define measure for all subse
 
 This necessitates the "domain of definition" of a measure, a $\sigma$-field:
 
+<div class="box">
 __Definition.__ A $\sigma$-field $\mathscr{F}$ is the collection of all subsets for which $\mu$ is defined.
 It must satisfy certain closure properties.
+</div>
 
 Note that a measure is not required to define $\mathscr{F}$, it has its own definition which encapsulates satisfying closure properties like set unions, intersections, and complements.
 
@@ -77,16 +82,22 @@ __Examples__
 
 The domain of a measure may not always be a powerset, but it will generally be a $\sigma$-field.
 
+<div class="box">
 __Definition.__ Given $(\mathscr{X}, \mathscr{F})$ where $\mathscr{X}$ is a set, $\mathscr{F}$ a $\sigma$-field over $\mathscr{X}$, a measure is a mapping $\mu \colon \mathscr{F} \to [0, \infty]$ where:
 
 $\mu(\bigcup_{i=1}^\infty A_i) = \sum_{i=1}^\infty$ for countable disjoint collection $A_1, A_2, \ldots$
 ($A_i \cap A_j = \emptyset$ for $i \neq j$)
 
+
 Then $(\mathscr{X}, \mathscr{F})$ is a _measurable space_.
+</div>
+<div class="box">
 
 __Definition.__ A _probability measure_ $P$ is a measure with $P(\mathscr{X}) = 1$.
+</div>
 
 Measures don't only allow weights of sets, they let us define integrals that put weight $\mu(A)$ on set $A$.
+
 
 __Examples:__ In the following, $f \colon \mathscr{X} \to \mathbb{R}$
 
@@ -97,13 +108,17 @@ In undergraduate probability without measure theory, we can run into issues such
 
 # Densities
 
+<div class="box">
 __Definition.__ Given $(\mathscr{X}, \mathscr{F})$, two measures $P, \mu$, we say $P$ is _absolutely continuous_ with respect to $\mu$ if for all $A \in \mathscr{F}$, if $\mu(A) = 0$, then $P(A) = 0$. We write $P \ll \mu$.
+</div>
 
 As an example, the binomial distribution is absolutely continuous w.r.t counting measure, but not Lebesgue measure.
 
+<div class="box">
 __Theorem.__ (_Radon-Nikodym_) If $P \ll \mu$, we can define a _density function_ $p(x) = \frac{dP}{d\mu}(x)$ where:
 
 $$P(A) = \int_A p(x) d\mu(x) = \int p(x) 1_A(x) d \mu(x)$$
+</div>
 
 The notation is meant to be suggestive. In the typical case, $P$ is a probability measure, $\mu$ is any old measure. The density function $p$ can be interpreted as a "re-weighting" function on $\mu$.
 
@@ -128,18 +143,22 @@ $$ \mu(\{ x \in \mathscr{X} \colon p_1(x) \neq p_2(x) \}) = 0 $$
 
 # Random variables
 
+<div class="box">
 __Definition.__
 
 1. $(\Omega, \mathscr{F}, \mathbb{P})$ is a _probability space_ if $\Omega$ is a set, $\mathscr{F}$ is a $\sigma$-field over it, and $\mathbb{P}$ is a probability measure over them.
 2. $\omega \in \Omega$ is an _outcome_, $\Omega$ is the _outcome space_
 3. $A \in \mathscr{F}$ is called an _event_ ($A \subseteq \Omega$)
 4. $P(A)$ is called the _probability_ of $A$.
+</div>
 
+<div class="box">
 __Definition.__ A _random variable_ (or _vector_) is a function $X \colon \Omega \to \mathscr{X}$ which tells us the value of $X$ for each outcome in $\Omega$. $\mathscr{X}$ is some destination space.
 
 We say $X$ has _distribution_ Q ($X \sim Q$) if
 
 $$ P(X \in B) = \mathbb{P}(\{ \omega \colon X(\omega) \in B \}) = P(X^{-1}(B)) = Q(B)$$
+</div>
 
 Here $B \subseteq \mathscr{X}$, and we require it to have a measureable preimage under $X$.
 In some sense, $Q$ is "induced" by $\mathbb{P}$ and $X$.
@@ -152,16 +171,20 @@ Then $\mathbb{P}(X \leq 5) = Q(\{ 0, \ldots, 5 \}) = \mathbb{P}(\{ \omega \colon
 
 Then $Q(B) = \int 1_B(x) \varphi(x) dx$
 
+<div class="box">
 __Definition.__ The _expectation_ $\mathbb{E}[X] = \int_{\Omega} X(\omega) d P(\omega) = \int_X x d Q(x)$.
+</div>
 
 # Estimation
 
 Estimation is the first statistical problem we will consider in this class. 
 Estimation invovles introducing ambiguity over what the distribution we are considering even is.
 
+<div class="box">
 __Definition.__ A _statistical model_ is a family of candidate probability distributions:
 
 $$P = \{ P_\theta \colon \theta \in \Theta \}$$
+</div>
 
 $\theta$, the _parameter_, can range over anything, not just a real number. $\Theta$ is often a subset of $\mathbb{R}^d$.
 
