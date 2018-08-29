@@ -56,11 +56,11 @@ __Examples__
 
 - If $\mathscr{X}$ is countable (e.g. $\mathscr{X} = \mathbb{Z}$), then we have the _counting measure_:
   
-  $\#(A) =$ number of points in $A$
+    $\#(A) =$ number of points in $A$
 
 - If $\mathscr{X} = \mathbb{R}^d$, we have _Lebesgue measure_ ("Leh-beg"):
 
-  $\lambda(A) = \int \ldots \int_A dx_1 \ldots dx_n = \text{Vol}(A)$.
+    $\lambda(A) = \int \ldots \int_A dx_1 \ldots dx_n = \text{Vol}(A)$.
 
 As the theory says, it's impossible to consistently define measure for all subsets of $\mathbb{R}$ or similar sets like $[0, 1]$. Lebesgue measure gives a measure for every set we encounter in life, but there are more exotic non-measurable sets it does not assign a weight to.
 
