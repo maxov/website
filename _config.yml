@@ -31,7 +31,6 @@ plugins:
 pandoc:
   extensions:
     - mathjax
-    - fenced_divs
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
