@@ -345,6 +345,7 @@ table {
 
 .defn {
   @include box;
+  position: relative;
   p:first-child:before {
     content: "Definition. ";
     font-weight: bold;
