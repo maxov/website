@@ -8,6 +8,7 @@ before_install:
   - wget https://github.com/jgm/pandoc/releases/download/2.2.3.2/pandoc-2.2.3.2-1-amd64.deb
   - sudo dpkg -i pandoc-2.2.3.2-1-amd64.deb
   - rm pandoc-2.2.3.2-1-amd64.deb
+  - pandoc --version
 install:
   - bundle
 script: jgd -u https://maxov:$PASSWORD@github.com/maxov/website
