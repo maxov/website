@@ -2,7 +2,7 @@
 
 // Define defaults for each variable.
 
-$base-font-family: "Open Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$base-font-family: "Computer Modern Bright", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 $base-font-size:   16px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
@@ -52,5 +52,6 @@ $on-laptop:        800px !default;
   "minima/base",
   "minima/layout",
   "minima/syntax-highlighting",
-  "pygments"
+  "pygments",
+  "cmu/cmun-bright"
 ;

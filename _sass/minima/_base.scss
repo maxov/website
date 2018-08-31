@@ -331,9 +331,30 @@ table {
   }
 }
 
-.box {
+
+@mixin box() {
   background-color: rgba(0, 0, 50, 0.05);
   padding: 1em 1em 0.5em 1em;
   margin-bottom: 1em;
   border-radius: 4px;
+}
+
+.box {
+  @include box;
+}
+
+.defn {
+  @include box;
+  p:first-child:before {
+    content: "Definition. ";
+    font-weight: bold;
+  }
+}
+
+.thm {
+  @include box;
+  p:first-child:before {
+    content: "Theorem. ";
+    font-weight: bold;
+  }
 }
