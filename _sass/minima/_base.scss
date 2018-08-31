@@ -346,16 +346,18 @@ table {
 .defn {
   @include box;
   position: relative;
-  p:first-child:before {
-    content: "Definition. ";
+  &:before {
+    content: "Definition";
     font-weight: bold;
+    display: inline;
   }
 }
 
 .thm {
   @include box;
-  p:first-child:before {
-    content: "Theorem. ";
+  &:before {
+    content: "Theorem";
     font-weight: bold;
+    display: inline;
   }
 }
