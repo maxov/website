@@ -30,7 +30,7 @@ that we already know and love.
 Note that we talk about collections in the definition of a category. This is not formally defined, and we can talk about
 the required set theory, but it's not important to understand the point of categories.
 
-<div class="box">
+::: box
 
 __Definition.__ A _category_ $\mathscr{C}$ consists of:
 
@@ -46,7 +46,7 @@ Such that:
 1. Composition of arrows is associative (add diagram): $h \circ (g \circ f) = (h \circ g) \circ f$
 2. There exist identity morphisms $e_x \in \text{Hom}_\mathscr{C}(x, x)$ so that $e_x \circ g = g, f \circ e_x = f$
 
-</div>
+:::
 
 Categories were invented in the 1950s for algebraic topology. Categories are so pervasive that today they seem fundamental to lots of math.
 
@@ -65,21 +65,21 @@ __Example.__ Suppose $\mathscr{C}$ has a single object $x$. (diagram)
 Then there exists some identity morphism $id_x$, and all other morphisms compose with each other with associativity.
 It turns out this kind of structure has a name, a monoid, with $M = \text{Hom}_\mathscr{C}(x, x)$.
 
-<div class="box">
+::: box
 
 __Definition.__ A _monoid_ is a set $M$ along with a binary operator $\circ$ such that:
 
 - there is an identity $e \in M$ (where $e \circ x = x$ and $x \circ e = x$ for all $x \in M$), and
 - $\circ$ is associative ($(x \circ y) \circ z = x \circ (y \circ z)$).
 
-</div>
+:::
 
 Conversely, given a monoid $M$, look at the _classifying category_ $BM$ (we will talk about this name later).
 It consists of a single object $x$, with $\text{Hom}_\mathscr{C}(x, x) = M$.
 
 Then in a specific way, the theory of monoids is a special case of the theory of categories.
 
-<div class="box">
+::: box
 __Definition.__
 
 1. A morphism $f \in \text{Hom}_\mathscr{C}(x, y)$ is an _isomorphism_/invertible if:\
@@ -87,7 +87,7 @@ __Definition.__
     (draw diagram)
 2. A category $\mathscr{C}$ is called a _groupoid_ if all morphisms are invertible.
 
-</div>
+:::
 
 __Examples__
 
@@ -112,7 +112,7 @@ Mention of Jean-Pierre Serre saying the best homework for a category theory clas
 
 Let's go over some ways to build new categories from ones we already know.
 
-<div class="box">
+::: box
 
 __Definition.__
 
@@ -137,18 +137,18 @@ __Definition.__
 
     __Exercise:__ Show that $(\quot{x}{\mathscr{C}})^{op} = \quot{\mathscr{C}^{op}}{x}$. 
 
-</div>
+:::
 
 # Functors and natural transformations
 
-<div class="box"> __Definition.__ A _functor_ $F \colon \mathscr{C} \to \mathscr{D}$ consists of:
+::: box __Definition.__ A _functor_ $F \colon \mathscr{C} \to \mathscr{D}$ consists of:
 
 - map of objects $F \colon \mathscr{C} \to \mathscr{D}$
 - For each $x, y \in \mathscr{C}$, map of morphisms (draw diagram):
 
     $$ F \colon \text{Hom}_{\mathscr{C}}(x, y) \to \text{Hom}_\mathscr{D}(Fx, fy)$$
 
-such that $F(f \circ g) = F(f) \circ F(g)$ (in analogy to group homomorphisms) </div>
+such that $F(f \circ g) = F(f) \circ F(g)$ (in analogy to group homomorphisms) :::
 
 __Examples__
 
@@ -159,4 +159,4 @@ __Examples__
 - One specific example of many:
     
     $$ F \colon \text{Top}^{op} \to \text{Vect}_\mathbb{R}$$
-    $$ x \mapsto \mathscr{C}^0(\mathscr{X}, \mathbb{R}) $$
+    $$ \mathscr{X} \mapsto \mathscr{C}^0(\mathscr{X}, \mathbb{R}) $$

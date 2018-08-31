@@ -29,12 +29,12 @@ how factoring reduces to order finding.
 }
 </style>
 
-<div class="presentation-preview">
+::: presentation-preview
 [
 ![presentation-preview](/assets/writing/qc-presentation/preview.png)
 ](/assets/writing/qc-presentation/quantum-computing.pdf)
 
-</div>
+:::
 
 [berkeley-drp]: https://math.berkeley.edu/wp/drp/
 [qc-book]: http://a.co/9TQZUgM

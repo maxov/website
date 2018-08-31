@@ -51,21 +51,21 @@ Rieffel researches _noncommutative geometry_, which uses the same math used in q
 
 # Metric Spaces
 
-<div class="box">
+::: box
 __Definition.__ Let $X$ be a set. By a _metric_ on $X$, we mean a function $d \colon X \times X \to \mathbb{R}^+$ such that:
 
 1. Symmetric $d(x, y) = d(y, x)$ for $x, y \in X$
 2. Triangle inequality $d(x, y) \leq d(x, z) + d(z, y)$ for $x, y, z \in X$
 3. $d(x, x) = 0$ iff x = y
 
-</div>
+:::
 
 A metric provides a specification of "distance" on a set. Note that here, $\mathbb{R}^+$ includes 0. Depending on the context it may not, or may include $+\infty$ as well.
 
-<div class="box">
+::: box
 __Definition.__ If instead for property 3 we only have that $d(x, x) = 0$ for $x \in X$, we say $d$ is a _semi-metric_ or
 _pseudo-metric_.
-</div>
+:::
 
 A set can have many metrics.
 For example, consider distances around Berkeley. The distance walking around can be different from the distance biking, or the distance driving or flying.
@@ -81,7 +81,7 @@ __Examples__
     - $d_p(v, w) = {\left(\sum (\alpha_j - \beta_j)^p\right)}^{(1/p)}$, $1 \leq p < \infty$
 - If $S \subset X$, then $d|_S$, the restriction of $d$ to $S$ is a metric on $S$.
 
-<div class="box">
+::: box
 __Definition.__ Let $V$ be a vector space over $\mathbb{R}$ or $\mathbb{C}$.
 By a _norm_ on $V$ we mean a function $\| \cdot \| \colon V \to \mathbb{R}^+$ where:
 
@@ -89,11 +89,11 @@ By a _norm_ on $V$ we mean a function $\| \cdot \| \colon V \to \mathbb{R}^+$ wh
 2. $\| v + w \| \leq \|v \| + \| w \|$
 3. If $\| v \| = 0$, then $v = 0_V$
 
-</div>
+:::
 
-<div class="box">
+::: box
 __Definition.__ If $\| \cdot \|$ only has the first two properties, we call it a _seminorm_.
-</div>
+:::
 
 From a norm we get a metric on $V$ by $d(v, w) = \| v - w \|$.
 
@@ -121,14 +121,14 @@ This is the starting point of _category theory_, where we study objects and tran
 
 What should the appropriate functions of study be between metric spaces? Let's see some examples.
 
-<div class="box">
+::: box
 __Definition.__ Let $f \colon X \to Y$ be a function, with $X$ and $Y$ metric spaces.
 
 1. $f$ is _isometric_ or _an isometry_ if $d_Y(f(x_1), f(x_2)) = d_X(x_1, x_2)$ for $x_1, x_2 \in X$. (this implies it is also one to one, but $f$ need not be onto)
 2. If there is a constant, $k_f > 0$ (depending on $f$) such that $d_Y(f(x_1), f(x_2)) \leq k_f d_X(x_1, x_2)$ for $x_1, x_2 \in X$, then $f$ is said to be _Lipschitz_. The smallest $k_f$ is the _Lipschitz constant_ of $f$
 3. $f$ is _uniformly continuous_ if $\forall \epsilon > 0$ $\exists \delta > 0$ s.t. for any $x_1, x_2 \in X$, if $d_X(x_1, x_2) < \delta$ then $d_Y(f(x_1), f(x_2)) < \epsilon$.
 4. $f$ is _continuous_ if (we should all know this, fill this in) for all $p \in X$, $\forall \epsilon > 0$, $\exists \delta > 0$ s.t. for all $x \in X$, if $0 < d_X(p, x) < \delta$ then $d_Y(f(p), f(x)) < \epsilon$.
-</div>
+:::
 
 We can build different categories between metric spaces depending on what function definition we choose to look at for our "morphisms".
 
