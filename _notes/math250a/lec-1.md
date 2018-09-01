@@ -139,7 +139,7 @@ A _functor_ $F \colon \mathscr{C} \to \mathscr{D}$ consists of:
 
     $$ F \colon \text{Hom}_{\mathscr{C}}(x, y) \to \text{Hom}_\mathscr{D}(Fx, fy)$$
 
-such that $F(f \circ g) = F(f) \circ F(g)$ (in analogy to group homomorphisms)
+such that $F(f \circ g) = F(f) \circ F(g)$ and $F(e_x) = e_{F(x)}$ (in analogy to group homomorphisms)
 :::
 
 __Examples__
