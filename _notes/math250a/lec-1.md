@@ -87,17 +87,17 @@ __Examples__
 - All categories, if we restrict to their isomorphisms, are groupoids.
 - Let $X$ be a finite set. $\text{Hom}_\text{Set}(X, X)$ is all maps from $X$ to itself, with composition is function composition
 - Let $X$ be a finite dimension vector space over $K$. Then $\text{Hom}_{\text{Vect}_K}(X, X)$ is all $n \times n$ matrices over $K$
-- Let $\mathscr{X}$ be a topological space. We can associate the Fundamental/Poncaire Groupoid $\Pi(\mathscr{X})$
-    - the objects are points $x \in \mathscr{X}$
+- Let $X$ be a topological space. We can associate the Fundamental/Poncaire Groupoid $\Pi(X)$
+    - the objects are points $x \in X$
     - The morphisms\
-    $\text{Hom}_{\Pi(\mathscr{X})}(x, y) = \{ \text{ homotopy classes of paths } \gamma \colon [0, 1] \to \mathscr{X} \text{ s.t. } \gamma(0) = x, \gamma(1) = y \}$
+    $\text{Hom}_{\Pi(X)}(x, y) = \{ \text{ homotopy classes of paths } \gamma \colon [0, 1] \to X \text{ s.t. } \gamma(0) = x, \gamma(1) = y \}$
     - compositions: path concatenations of equivalence classes, with the identity being the constant path
     - (draw diagram) this is an interesting example, but the details are not too relevant to our discussion of categories
 - Suppose $\mathscr{C}$ has a single object and is a groupoid. Then $G = \text{Hom}_\mathscr{C}(x, x)$ is a group.
 For the converse, given a group $G$, we can construct the classifying category $BG$.
-- Suppose in the context of the Fundamental Groupoid we fix $x \in \mathscr{X}$, then $\text{Hom}_{\Pi(\mathscr{X})}(x, x) = G = \Pi_1(\mathscr{X}, x)$ is the _fundamental group_
+- Suppose in the context of the Fundamental Groupoid we fix $x \in X$, then $\text{Hom}_{\Pi(X)}(x, x) = G = \Pi_1(X, x)$ is the _fundamental group_
 
-__Exercise.__ (for those well-versed in algebraic topology) Show any group $G$ is $\Pi_1(\mathscr{X}, x)$ for some $\mathscr{X}$ and $x \in \mathscr{X}$.
+__Exercise.__ (for those well-versed in algebraic topology) Show any group $G$ is $\Pi_1(X, x)$ for some $X$ and $x \in X$.
 
 Mention of Jean-Pierre Serre saying the best homework for a category theory class is to re-prove all the theorems.
 
@@ -151,4 +151,4 @@ __Examples__
 - One specific example of many:
     
     $$ F \colon \text{Top}^{op} \to \text{Vect}_\mathbb{R}$$
-    $$ \mathscr{X} \mapsto \mathscr{C}^0(\mathscr{X}, \mathbb{R}) $$
+    $$ X \mapsto \mathscr{C}^0(X, \mathbb{R}) $$
