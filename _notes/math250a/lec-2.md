@@ -108,5 +108,104 @@ $x \in \mathscr{C}$.
 $G \circ F \stackrel{\simeq}{_\text{isom}} \text{id}_\mathscr{C}$ and  $F \circ G \stackrel{\simeq}{_\text{isom}} \text{id}_\mathscr{D}$.
 :::
 
-Note that we use essential surjectivity as opposed to the natural definition for surjectivity because surjectivity is
-too strong.
+Note that we use essential surjectivity as opposed to the natural definition for surjectivity because surjectivity by itself is too strong.
+
+__Warning:__ Equivalence is not the same as asking two categories to be isomorphic.
+That would imply the existence of functors in opposite directions $F, G$ such that $G \circ F = \text{id}_\mathscr{C}$
+and $F \circ G = \text{id}_\mathscr{D}$.
+Here we use strict equality instead of isomorphisms of functors, which turns out to be far too strong and restrictive.
+
+It is very useful to construct equivalences, which we can do easier due to the following lemma:
+
+__Lemma.__ Let $F \colon \mathscr{C} \to \mathscr{D}$ be a functor.
+Then $F$ is an equivalence if and only if it is fully faithful and essentially surjective.
+
+Proving (equivalence $\implies$ fully faithful and essentially surjective) is an exercise, while the other direction involves some set theory.
+
+__Example.__ Let $\mathscr{D} = \text{Finset}$. Let $\mathscr{C} = \{ [-1], [0], [1], \ldots \}$, with
+$\text{Hom}_\mathscr{C}([m], [n])$ as all set maps $<0, 1, \ldots, m> \ \to \ <0, 1, \ldots, n>$ and compositions as
+compositions of set maps.
+
+Now let $F \colon \mathscr{C} \to \mathscr{D}$.
+It maps objects $[m] \mapsto <0, 1, \ldots, m>$, and on morphisms $f \mapsto f$.
+$F$ is an equivalence.
+
+__Example.__ Categories can really be anything.
+As a toy example, consider our "funny cat" $\mathscr{C}$: (diagram)
+
+This is a valid category!
+It just doesn't mean much when we think about typical mathematical objects we study.
+
+__Warning:__ Functors are _not_ determined by what they do to objects.
+
+Consider two categories $\mathscr{C}$ and $\mathscr{D}$ (diagram):
+
+We can construct the functors $F(f) = g$ or $F'(f) = h$, which do the expected thing on objects but differ on morphisms.
+
+We also attempted to construct a more complicated example, but the way it failed is informative.
+
+Let $F \colon \text{Vect}_K \to \text{Vect}_K$ be $\text{id}_{\text{Vect}_k}$.
+Define $F' \colon \text{Vect}_k \to \text{Vect}_k$ that maps:
+
+$$ \text{objects:}\quad v \mapsto v$$
+$$ \text{morphisms:}\quad \text{Hom}_{\text{Vect}_K}(V, W) \to \text{Hom}_{\text{Vect}_k}(V, W)$$
+$$ (f \colon V \stackrel{_\text{linear}}{\to} W) \longmapsto \begin{cases}
+f \colon V \to W & \text{if $f$ iso} \\
+0 \colon V \to W & \text{else} 
+\end{cases}$$
+
+Note that $F'$ _fails_ as a functor!! Take for example the chain of inclusion followed by projection:
+
+$$K \stackrel{i_1}{\to} K \otimes K \stackrel{p_1}{\to} K$$
+
+Under $F'$ this becomes:
+
+$$K \stackrel{0}{\to} K \otimes K \stackrel{o}{\to} K$$
+
+We must have that $F'(i_1 \circ p_1) = F'(i_1) \circ F'(p_1)$
+but we have: $$\text{id}_K = F'(i_1 \circ p_1) \neq F'(i_1) \circ F'(p_1) = 0 \circ 0 = 0$$
+
+# Yoneda
+
+Now let us talk about an important lemma that has a wide application, the Yoneda lemma.
+We will not discuss the proof, but proving it is a good exercise in definition-chasing.
+
+An aside: Pierre Deligne from Belgium was made a viscount for his contributions to mathematics,
+and on his coat of arms he has a poem that mentions mathematics as tautologies following tautologies
+following tautologies.
+
+In the following, we define the functor $\text{Hom}_\mathscr{C}(-, x) \colon \mathscr{C}^{op} \to \text{Set}$ as the map:
+
+$$ w \longmapsto \text{Hom}_\mathscr{C}(w, x) $$
+
+To check that $\text{Hom}_\mathscr{C}(-, x) \in \text{Fun}(\mathscr{C}^{op}, \text{Set})$, it acts on morphisms as:
+
+$$(y \stackrel{f}{\to} z) \ \ \longmapsto \ \ \left(\text{Hom}_\mathscr{C}(y, x) \stackrel{\circ f}{\leftarrow} \text{Hom}_\mathscr{C}(z, x) \right)$$
+
+
+::: box 
+__Lemma__\
+_(Yoneda)_
+
+For every category $\mathscr{C}$, there exists a functor called the _Yoneda functor_
+$Y \colon \mathscr{C} \to \text{Fun}(\mathscr{C}^{op}, \text{Set})$ which acts on $x \in \mathscr{C}$ as:
+
+$$ x \longmapsto \text{Hom}_\mathscr{C}(-, x) $$
+
+On morphisms, we have:
+
+$$Y \colon\qquad x \stackrel{f}{\to} x' \ \ \longmapsto \ \ \left(\text{Hom}_\mathscr{C}(-, x) \stackrel{f \circ}{\longrightarrow} \text{Hom}_\mathscr{C}(-, x')\right)$$
+
+Then $Y$ is fully faithful.
+:::
+
+__Warning:__ In general, $Y$ is not essentially surjective.
+
+::: defn
+Functors $F \colon \mathscr{C}^{op} \to \text{Set}$ of the form $Y(x) \in \text{Hom}_\mathscr{C}(-, x)$ are called _representable_.
+:::
+
+Representable functors have a connection with representation theory, which we will talk about later in this class.
+
+__Example/Exercise.__ Let $\mathscr{C} = BG$ for $G$ a group.
+Calculate $\text{Fun}(\mathscr{C}^{op}, \text{Set})$ and the image of $Y \colon \mathscr{C} \to \text{Fun}(\mathscr{C}^{op}, \text{Set})$.
