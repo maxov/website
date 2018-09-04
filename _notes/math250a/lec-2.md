@@ -194,7 +194,7 @@ $$ x \longmapsto \text{Hom}_\mathscr{C}(-, x) $$
 
 On morphisms, we have:
 
-$$Y \colon\qquad x \stackrel{f}{\to} x' \ \ \longmapsto \ \ \left(\text{Hom}_\mathscr{C}(-, x) \stackrel{f \circ}{\longrightarrow} \text{Hom}_\mathscr{C}(-, x')\right)$$
+$$x \stackrel{f}{\to} x' \ \ \longmapsto \ \ \left(\text{Hom}_\mathscr{C}(-, x) \stackrel{f \circ}{\longrightarrow} \text{Hom}_\mathscr{C}(-, x')\right)$$
 
 Then $Y$ is fully faithful.
 :::
