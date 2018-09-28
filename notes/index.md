@@ -12,6 +12,5 @@ Please direct questions about these notes to me, not to the lecturer who gave th
 ### Fall 2018
 
 - [Math 202A - Introduction to Topology and Analysis](math202a)
-- [Math 249 - Enumerative Combinatorics](math249)
 - [Math 250A - Groups, Rings, and Fields](math250a)
 - [Stat 210A - Theoretical Statistics](stat210a)
