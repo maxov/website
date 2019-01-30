@@ -5,11 +5,11 @@ permalink: /teaching/170-sp19/
 hide_link: true
 ---
 
-#### January 30, 2018
+#### January 30, 2010
 
 Notes for this discussion coming up soon!
 
-#### January 23, 2018
+#### January 23, 2019
 
 I made a video about this discussion here: <https://www.youtube.com/watch?v=tnhqDfSgovo&feature=youtu.be>
 
