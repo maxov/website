@@ -5,9 +5,21 @@ permalink: /teaching/170-sp19/
 hide_link: true
 ---
 
-#### January 30, 2010
+#### February 20, 2019
 
-Notes for this discussion coming up soon!
+Notes are [here](dis05-notes.pdf)! A bit of Dijkstra's, Bellman-Ford, MST.
+
+#### February 13, 2019
+
+Exam review. Thanks to Vinay for covering!
+
+#### February 6, 2019
+
+Mostly lecturing on FFT.
+
+#### January 30, 2019
+
+Recurrences, master theorem, divide and conquer, Complex numbers. 
 
 #### January 23, 2019
 
