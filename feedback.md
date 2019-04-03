@@ -1,6 +1,6 @@
 ---
 layout: redirect
 message: Feedback
-redirect_to: https://docs.google.com/forms/d/e/1FAIpQLSesQ0TZQbifZ_cBg-hdOd9CcWF3bjHjqnnoZVEhDkXicNxPbg/viewform
+redirect_to: https://forms.gle/Mpp8s8FR1DPqmiCX9
 permalink: /feedback/
 ---
