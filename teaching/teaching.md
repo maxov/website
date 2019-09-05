@@ -4,6 +4,9 @@ title: Teaching
 permalink: /teaching/
 ---
 
+### Fall 2019
+- [CS 170](170-fa19)
+
 ### Spring 2019
 - [CS 170](170-sp19)
 - CSM 70
