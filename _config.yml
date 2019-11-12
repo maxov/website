@@ -24,13 +24,13 @@ url: "https://maxov.org" # the base hostname & protocol for your site, e.g. http
 github_username:  maxov
 
 # Build settings
-markdown: Pandoc
+markdown: kramdown
 plugins:
   - jekyll-feed
-  - jekyll-pandoc
-pandoc:
-  extensions:
-    - mathjax
+  - jekyll-commonmark-ghpages
+# pandoc:
+#   extensions:
+#     - mathjax
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
