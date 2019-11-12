@@ -24,7 +24,7 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
   gem 'jekyll-redirect-from'
   # gem 'jekyll-pandoc'
-  gem 'jekyll-commonmark-ghpages'
+  # gem 'jekyll-commonmark-ghpages'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

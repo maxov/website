@@ -18,15 +18,15 @@
     {% endif %}
 
     <script>
-    var host = "maxov.org"
-    if (window.location.host == host && window.location.protocol != "https:") {
-      window.location.protocol = "https:"
-    }
     document.addEventListener("DOMContentLoaded", function() {
       renderMathInElement(document.body, {
         macros: {
           "\\quot": "\\raisebox{0.25em}{\\text{$#1$}}\\!\\diagup\\! \\raisebox{-0.25em}{\\text{$#2$}}"
-        }
+        },
+        delimiters: [
+          {left: "$", right: "$", display: false},
+          {left: "$$", right: "$$", display: true}
+        ]
       });
     });
     </script>
