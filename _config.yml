@@ -27,9 +27,6 @@ github_username:  maxov
 markdown: kramdown
 plugins:
   - jekyll-feed
-kramdown:
-  math_engine: nil
-
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
