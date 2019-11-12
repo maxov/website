@@ -337,6 +337,15 @@ table {
   padding: 1em 1em 0.5em 1em;
   margin-bottom: 1em;
   border-radius: 4px;
+  color: $text-color;
+  @include relative-font-size(1.0);
+  letter-spacing: 0px;
+  border-left: none;
+  font-style: normal;
+
+  p:first-child {
+    display: inline;
+  }
 }
 
 .ibox {
@@ -353,7 +362,7 @@ table {
   @include box;
   position: relative;
   &:before {
-    content: "Definition";
+    content: "Definition.";
     font-weight: bold;
     display: inline;
   }
@@ -362,8 +371,24 @@ table {
 .thm {
   @include box;
   &:before {
-    content: "Theorem";
+    content: "Theorem. ";
     font-weight: bold;
     display: inline;
+  }
+}
+
+.qed {
+  text-align: right;
+  color: transparent;
+  padding: 0;
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+  &:after {
+    color: $text-color;
+    content: "\25A1";
+    font-size: 1.5em;
+    line-height: 0.5;
   }
 }
