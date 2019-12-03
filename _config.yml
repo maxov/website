@@ -44,3 +44,6 @@ plugins:
 collections:
   notes:
     output: true
+  cv_sections:
+    output: false
+    sort_by: order

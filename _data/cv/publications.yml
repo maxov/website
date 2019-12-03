@@ -1,0 +1,8 @@
+name: Publications
+order: 3
+items:
+  - name: >- 
+      "Efficient Post-Quantum SNARKs for RSIS and RLWE and their Applications to Privacy."
+      Cecilia Boschini, Jan Camenisch, Nicholas Spooner and Max Ovsiankin
+      (In submission)
+    nobf: true

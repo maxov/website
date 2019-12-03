@@ -1,0 +1,30 @@
+name: Employment
+order: 5
+items:
+  - name: 'Twitter'
+    location: 'San Francisco, CA'
+    time: 'May - Aug 2018'
+    position: Software Engineering Intern
+    description: >-
+      Researched JVM language tooling on the Scala Tools team. 
+      Built Scala expression parser, worked on new Scala compiler, designed semantic analyzation, rewrite, and comparison tools for compiler-added synthetics like implicits and inferred type parameters. 
+      Created Java compiler plugin that captures semantic information. 
+      Most work has been open-sourced at Twitter Rsc or Scalameta.
+  - name: 'Salesforce Einstein'
+    location: 'Palo Alto, CA'
+    time: 'May - Aug 2017'
+    position: Data Science Intern
+    description: >-
+      Wrote Scala and worked with Spark. 
+      Contributed to machine learning engine in model serialization, automatic feature engineering, “smart” quickstart templates, and assorted refactors. 
+      Tuned pilot tenant models in order to upstream algorithm changes to ML framework. 
+      Built tools in Gradle and Scala to assist with modeling workflows and submitting projects to clusters.
+  - name: 'Kifi'
+    time: 'June - Sep 2015'
+    location: 'Mountain View, CA'
+    position: Software Engineering Intern
+    description: >- 
+      Wrote Scala and worked with Slick and Play Framework. 
+      Helped refactor Kifi’s web scraper, designed and built a new system for delivering notifications. 
+      Built chatops tools to streamline deployment. 
+      All work deployed to production.

@@ -1,0 +1,7 @@
+name: Education
+order: 2
+items:
+  - name: B.A., University of California, Berkeley
+    location: Berkeley, CA
+    description: 'Mathematics and Computer Science, 3.85 GPA.'
+    time: '2016 - 2020'

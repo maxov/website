@@ -1,0 +1,18 @@
+name: Teaching
+order: 4
+items:
+  - name: Head TA, CS 170 Intro to CS Theory
+    nobf: true
+    time: Fall 2019
+  - name: TA, CS 189 Intro to Machine Learning
+    nobf: true
+    time: Summer 2019
+  - name: Head TA, CS 170 Intro to CS Theory
+    nobf: true
+    time: Spring 2019
+  - name: TA, CS 170 Intro to CS Theory
+    nobf: true
+    time: Fall 2018
+  - name: Tutor, CS 70 Discrete Math and Probability Theory
+    nobf: true
+    time: Spring 2018

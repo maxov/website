@@ -1,0 +1,13 @@
+name: Talks
+order: 3
+items:
+  - name: 'Validating Typechecking Changes with SemanticDB'
+    time: 'Sep 2018'
+    description: >-
+      Student talk at ICFP 2018 based on industry research done at Twitter.
+
+  - name: 'Cracking RSA with Quantum Computing'
+    description: >- 
+      Presentation of reading project on Shor's algorithm, and the implications for RSA. 
+      Done under the Berkeley Mathematics Directed Reading Program.
+    time: 'May 2018'
