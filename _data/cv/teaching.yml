@@ -1,22 +1,27 @@
 name: Teaching
 order: 4
 items:
-  - name: Head TA, CS 170 Intro to CS Theory
+  - name: CS 170 Intro to CS Theory
+    position: Head TA
     nobf: true
     time: Fall 2019
     description: Under professors Prasad Raghavendra and Satish Rao.
-  - name: TA, CS 189 Intro to Machine Learning
+  - name: CS 189 Intro to Machine Learning
+    position: TA
     nobf: true
     time: Summer 2019
     description: Under Marc Khoury and Brijen Thananjeyan.
-  - name: Head TA, CS 170 Intro to CS Theory
+  - name: CS 170 Intro to CS Theory
+    position: Head TA
     nobf: true
     time: Spring 2019
     description: Under professors Luca Trevisan and Prasad Raghavendra.
-  - name: TA, CS 170 Intro to CS Theory
+  - name: CS 170 Intro to CS Theory
+    position: TA
     nobf: true
     time: Fall 2018
     description: Under professors Alessandro Chiesa and Satish Rao.
-  - name: Tutor, CS 70 Discrete Math and Probability Theory
+  - name: CS 70 Discrete Math and Probability Theory
+    position: Tutor
     nobf: true
     time: Spring 2018

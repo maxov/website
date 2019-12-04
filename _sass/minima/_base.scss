@@ -399,6 +399,11 @@ table {
 
 .cv {
   padding-top: 20px;
+
+  p {
+    margin-bottom: 0;
+  }
+
   .center {
     text-align: center;
   }
@@ -435,7 +440,7 @@ table {
   }
 
   .item {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
 
     .item-name {
       float: left;
