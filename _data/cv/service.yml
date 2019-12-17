@@ -1,0 +1,22 @@
+name: Service
+order: 8
+items:
+  - name: 'AddisCoder'
+    nobf: true
+    position: TA
+    time: 'Summer 2020, planned'
+    description: >-
+      <a href="https://www.addiscoder.com">https://www.addiscoder.com</a>.
+      Will serve as a TA for AddisCoder, a free intensive 4-week summer program in Addis Ababa, Ethiopia 
+      introducing high schoolers to programming and algorithms.
+  - name: 'Computer Science Mentors (CSM)'
+    nobf: true
+    position: 'Mentor, Co-Coord'
+    time: 'Jan 2018 - May 2019'
+    description: >-
+      <a href="https://csmentors.berkeley.edu/">https://csmentors.berkeley.edu/</a>.
+      CSM provides adjunct sections for UC Berkeley CS classes for free.
+      Volunteered as a mentor for CSM for CS 70 for three semesters.
+      Later I was a co-coordinator, managing logistics and helping mentors succeed teaching their sections,
+      including sections for underrepresented students in CS.
+      

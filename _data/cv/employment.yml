@@ -20,7 +20,7 @@ items:
       Tuned pilot tenant models in order to upstream algorithm changes to ML framework. 
       Built tools in Gradle and Scala to assist with modeling workflows and submitting projects to clusters.
   - name: 'Kifi'
-    time: 'June - Sep 2015'
+    time: 'Jun - Sep 2015'
     location: 'Mountain View, CA'
     position: Software Engineering Intern
     description: >- 
