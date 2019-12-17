@@ -1,0 +1,9 @@
+name: Music
+order: 8
+body: I have been playing piano for over 15 years, though less so in college.
+items:
+  - name: 'Treasury of Romantic Senior B'
+    location: '1st place'
+    description: 'United States Open Music Competition. <a href="https://www.youtube.com/watch?v=8Rd8EcyLHz4">Video of me playing</a>'
+    nobf: true
+    time: 'March 2014'

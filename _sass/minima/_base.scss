@@ -422,6 +422,8 @@ table {
     flex-wrap: wrap;
     width: 100%;
     margin-bottom: 1rem;
+
+    
   }
 
   .section-title {
@@ -438,6 +440,12 @@ table {
     &.lf {
       flex: 0.37;
     }
+
+    > p {
+      &:first-child {
+        margin-bottom: 0.8rem;
+      }
+    }
   }
 
   .item {
@@ -449,6 +457,15 @@ table {
 
       &.item-nobf {
         font-weight: normal;
+      }
+    }
+
+    .item-location {
+      float: left;
+      p {
+        display: inline;
+        padding: 0;
+        margin: 0;
       }
     }
 

@@ -2,8 +2,8 @@ name: Open Source
 order: 7
 items:
   - name: Scalameta
-    location: https://github.com/scalameta/scalameta
+    location: <https://github.com/scalameta/scalameta>
   - name: Transmogrif.AI
-    location: https://github.com/salesforce/TransmogrifAI
+    location: <https://github.com/salesforce/TransmogrifAI>
   - name: Reasonable Scala Compiler
-    location: https://github.com/twitter/rsc
+    location: <https://github.com/twitter/rsc>

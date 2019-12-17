@@ -5,13 +5,13 @@
 
   <body>
 
-    {% assign NUM_SECTIONS = 7 %}
+    {% assign NUM_SECTIONS = 8 %}
 
     <main aria-label="Content">
       <div class="wrapper cv">
           <h1 class="center">Max Ovsiankin</h1>
           <div class="center">Curriculum Vitae &ndash; December 2019</div>
-          <div class="center mono">https://maxov.org &bull; maxov@berkeley.edu</div>
+          <div class="center mono"><a href="https://maxov.org">https://maxov.org</a> &bull; maxov@berkeley.edu</div>
           <hr/>
           {% for o in (1..NUM_SECTIONS) %}
             {% for section_hash in site.data.cv %}
@@ -28,7 +28,12 @@
                                 <div class="item">
                                     <span class="item-name {% if item.nobf %} item-nobf {% endif %}">
                                         {{ item.name }}
-                                    </span>{% if item.location %}, {{ item.location }}{% endif %}{% if item.position %}. <span class="item-position">{{ item.position }}</span>{% endif %}
+                                    </span>
+                                    {% if item.location %}
+                                    <span class="item-location">
+                                        , {{ item.location | markdownify }}</span>
+                                    {% endif %}
+                                    {% if item.position %}<span class="item-position">. {{ item.position }}</span>{% endif %}
                                     <span class="time">
                                             {{ item.time }}
                                     </span>
