@@ -5,7 +5,8 @@
 
   <body>
 
-    {% assign NUM_SECTIONS = 9 %}
+    {% include snd.liquid collection=site.data.cv %}
+    {% assign sections = return | sort: 'order' %}
 
     <main aria-label="Content">
       <div class="wrapper cv">
@@ -13,47 +14,42 @@
           <div class="center">Curriculum Vitae &ndash; December 2019</div>
           <div class="center mono"><a href="https://maxov.org">https://maxov.org</a> &bull; maxov@berkeley.edu</div>
           <hr/>
-          {% for o in (1..NUM_SECTIONS) %}
-            {% for section_hash in site.data.cv %}
-                {% assign section = section_hash[1] %}
-                {% if section.order == o %}
-                    <div class="section">
-                        <div class="section-col lf section-title">{{ section.name }}</div>
-                        <div class="section-col">
-                            {% if section.body %}
-                                {{ section.body | markdownify }}
-                            {% endif %}
-                            {% if section.items %}
-                                {% for item in section.items %}
-                                <div class="item">
-                                    <span class="item-name {% if item.nobf %} item-nobf {% endif %}">
-                                        {{ item.name }}
-                                    </span>
-                                    {% if item.location %}
-                                    <span class="item-location">
-                                        , {{ item.location | markdownify }}</span>
-                                    {% endif %}
-                                    {% if item.position %}<span class="item-position">. {{ item.position }}</span>{% endif %}
-                                    <span class="time">
-                                            {{ item.time }}
-                                    </span>
-                                    <div class="cf"></div>
-                                    {% if item.description %}<p>{{ item.description }}</p> {% endif %}
-                                </div>
-                                {% endfor %}
-                            {% endif %}
-                            {% if section.small_items %}
+          {% for section in sections %}
+                <div class="section">
+                    <div class="section-col lf section-title">{{ section.name }}</div>
+                    <div class="section-col">
+                        {% if section.body %}
+                            {{ section.body | markdownify }}
+                        {% endif %}
+                        {% if section.items %}
+                            {% for item in section.items %}
                             <div class="item">
-                                {% for sm in section.small_items %}
-                                <p>{{ sm }} </p>
-                                {% endfor %}
+                                <span class="item-name {% if item.nobf %} item-nobf {% endif %}">
+                                    {{ item.name }}
+                                </span>
+                                {% if item.location %}
+                                <span class="item-location">
+                                    , {{ item.location | markdownify }}</span>
+                                {% endif %}
+                                {% if item.position %}<span class="item-position">. {{ item.position }}</span>{% endif %}
+                                <span class="time">
+                                        {{ item.time }}
+                                </span>
+                                <div class="cf"></div>
+                                {% if item.description %}<p>{{ item.description }}</p> {% endif %}
                             </div>
-                            {% endif %}
+                            {% endfor %}
+                        {% endif %}
+                        {% if section.small_items %}
+                        <div class="item">
+                            {% for sm in section.small_items %}
+                            <p>{{ sm }} </p>
+                            {% endfor %}
                         </div>
+                        {% endif %}
                     </div>
-                {% endif %}
+                </div>
             {% endfor %}
-          {% endfor %}
       </div>
     </main>
 

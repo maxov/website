@@ -2,10 +2,15 @@ name: Teaching
 order: 5
 items:
   - name: CS 170 Intro to CS Theory
+    position: Content TA
+    nobf: true
+    time: Spring 2020
+    description: Under Alessandro Chiesa and Jelani Nelson.
+  - name: CS 170 Intro to CS Theory
     position: Head TA
     nobf: true
     time: Fall 2019
-    description: Under professors Prasad Raghavendra and Satish Rao.
+    description: Under Prasad Raghavendra and Satish Rao.
   - name: CS 189 Intro to Machine Learning
     position: TA
     nobf: true
@@ -15,12 +20,12 @@ items:
     position: Head TA
     nobf: true
     time: Spring 2019
-    description: Under professors Luca Trevisan and Prasad Raghavendra.
+    description: Under Luca Trevisan and Prasad Raghavendra.
   - name: CS 170 Intro to CS Theory
     position: TA
     nobf: true
     time: Fall 2018
-    description: Under professors Alessandro Chiesa and Satish Rao.
+    description: Under Alessandro Chiesa and Satish Rao.
   - name: CS 70 Discrete Math and Probability Theory
     position: Tutor
     nobf: true

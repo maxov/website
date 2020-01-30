@@ -1,0 +1,6 @@
+{% assign return = "" | split: ',' %}
+
+{% for obj in include.collection %}
+    {% assign to_push = obj[1] %}
+    {% assign return = return | push: to_push %}
+{% endfor %}
