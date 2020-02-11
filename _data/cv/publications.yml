@@ -4,7 +4,7 @@ items:
   # - name: >- 
       # "Efficient Post-Quantum SNARKs for RSIS and RLWE and their Applications to Privacy."
   - description: >-
-      C. Boschini, J. Camenisch, N. Spooner, M. Ovsiankin.
+      C. Boschini, J. Camenisch, N. Spooner, M. Ovsiankin,
       <strong>Efficient Post-Quantum SNARKs for RSIS and RLWE and their Applications to Privacy.</strong>
       <em><a href="https://pqcrypto2020.inria.fr/papers/">PQCrypto 2020</a></em>.
   

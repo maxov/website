@@ -1,13 +1,13 @@
 name: Talks
 order: 4
 items:
-  - name: 'Validating Typechecking Changes with SemanticDB'
-    time: 'Sep 2018'
-    description: >-
-      Student talk at ICFP 2018 based on industry research done at Twitter.
+  - description: >-
+      M. Ovsiankin, E. Burmako.
+      <strong>Validating Typechecking Changes with SemanticDB</strong>,
+      <a href="https://conf.researchr.org/details/scala-2018/scala-2018-papers/13/Validating-Changes-in-Typechecking-on-Codebases-with-SemanticDB-Student-talk">
+      <em>ICFP 2018</em></a>.
 
-  - name: 'Cracking RSA with Quantum Computing'
-    description: >- 
-      Presentation of reading project on Shor's algorithm, and the implications for RSA. 
-      Done under the Berkeley Mathematics Directed Reading Program.
-    time: 'May 2018'
+  - description: >- 
+      M. Ovsiankin, 
+      <strong>Cracking RSA with Quantum Computing</strong>.
+      <em>Berkeley Mathematics Directed Reading Program, 2018</em>.
