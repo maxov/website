@@ -1,8 +1,10 @@
 name: Publications
 order: 3
 items:
-  - name: >- 
-      "Efficient Post-Quantum SNARKs for RSIS and RLWE and their Applications to Privacy."
-      Cecilia Boschini, Jan Camenisch, Nicholas Spooner and Max Ovsiankin
-      (In submission)
-    nobf: true
+  # - name: >- 
+      # "Efficient Post-Quantum SNARKs for RSIS and RLWE and their Applications to Privacy."
+  - description: >-
+      C. Boschini, J. Camenisch, N. Spooner, M. Ovsiankin.
+      <strong>Efficient Post-Quantum SNARKs for RSIS and RLWE and their Applications to Privacy.</strong>
+      <em><a href="https://pqcrypto2020.inria.fr/papers/">PQCrypto 2020</a></em>.
+  
