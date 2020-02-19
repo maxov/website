@@ -1,0 +1,5 @@
+name: Honors
+order: 5
+items:
+  - name: 'Member of Phi Beta Kappa and Upsilon Pi Epsilon'
+    nobf: true
