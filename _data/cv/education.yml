@@ -2,7 +2,7 @@ name: Education
 order: 2
 items:
   - name: University of California, Berkeley
-    location: CA
+    # location: CA
     description: >-
       B.A., Mathematics and Computer Science
     time: '2016 - 2020, planned'
