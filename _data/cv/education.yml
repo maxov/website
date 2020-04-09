@@ -1,8 +1,12 @@
 name: Education
 order: 2
 items:
+  - name: Toyota Technological Institute at Chicago
+    description: >-
+      Ph.D., Computer Science
+    time: '2020 - 2025, planned'
   - name: University of California, Berkeley
     # location: CA
     description: >-
       B.A., Mathematics and Computer Science
-    time: '2016 - 2020, planned'
+    time: '2016 - 2020'
