@@ -1,32 +1,19 @@
 name: Teaching
 order: 6
 items:
-  - name: CS 170 Intro to CS Theory
-    position: Content TA
+  - name: TTIC 31200 Information and Coding Theory 
+    position: TA
     nobf: true
-    time: Spring 2020
-    description: Under Alessandro Chiesa and Jelani Nelson.
-  - name: CS 170 Intro to CS Theory
-    position: Head TA
+    time: Autumn 2022
+  - name: TTIC 31010 Algorithms
+    position: TA
     nobf: true
-    time: Fall 2019
-    description: Under Prasad Raghavendra and Satish Rao.
-  - name: CS 189 Intro to Machine Learning
+    time: Winter 2022
+  - name: Berkeley CS 170 Intro to CS Theory
+    position: TA
+    nobf: true
+    time: Spring 2018 - Spring 2020
+  - name: Berkeley CS 189 Intro to Machine Learning
     position: TA
     nobf: true
     time: Summer 2019
-    description: Under Marc Khoury and Brijen Thananjeyan.
-  - name: CS 170 Intro to CS Theory
-    position: Head TA
-    nobf: true
-    time: Spring 2019
-    description: Under Luca Trevisan and Prasad Raghavendra.
-  - name: CS 170 Intro to CS Theory
-    position: TA
-    nobf: true
-    time: Fall 2018
-    description: Under Alessandro Chiesa and Satish Rao.
-  - name: CS 70 Discrete Math and Probability Theory
-    position: Tutor
-    nobf: true
-    time: Spring 2018

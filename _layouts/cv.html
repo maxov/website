@@ -11,10 +11,11 @@
     <main aria-label="Content">
       <div class="wrapper cv">
           <h1 class="center">Max Ovsiankin</h1>
-          <div class="center">Curriculum Vitae &ndash; October 2021</div>
-          <div class="center mono"><a href="https://maxov.org">https://maxov.org</a> &bull; maxov@berkeley.edu</div>
+          <div class="center">Curriculum Vitae &ndash; March 2023</div>
+          <div class="center mono"><a href="https://maxov.org">https://maxov.org</a> &bull; &lang;concat max and ov&rang;@ttic.edu</div>
           <hr/>
           {% for section in sections %}
+            {% unless section.hide %}
                 <div class="section">
                     <div class="section-col lf section-title">{{ section.name }}</div>
                     <div class="section-col">
@@ -49,7 +50,8 @@
                         {% endif %}
                     </div>
                 </div>
-            {% endfor %}
+            {% endunless %}
+        {% endfor %}
       </div>
     </main>
 

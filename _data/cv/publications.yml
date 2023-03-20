@@ -1,8 +1,10 @@
 name: Publications
 order: 3
 items:
-  # - name: >- 
-      # "Efficient Post-Quantum SNARKs for RSIS and RLWE and their Applications to Privacy."
+  - description: >-
+        Y. Makarychev, N. Manoj, M. Ovsiankin,
+        <strong>Streaming algorithms for ellipsoidal approximation of convex polytopes.</strong>
+        <em>COLT 2022</em>.
   - description: >-
       C. Boschini, J. Camenisch, N. Spooner, M. Ovsiankin,
       <strong>Efficient Post-Quantum SNARKs for RSIS and RLWE and their Applications to Privacy.</strong>

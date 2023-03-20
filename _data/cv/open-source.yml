@@ -1,5 +1,6 @@
 name: Open Source
 order: 8
+hide: true 
 items:
   - name: Scalameta
     location: <https://github.com/scalameta/scalameta>

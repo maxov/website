@@ -1,5 +1,6 @@
 name: Music
 order: 10
+hide: true
 body: I have been playing piano for over 15 years, less so in college.
 items:
   - name: 'Treasury of Romantic Senior B'

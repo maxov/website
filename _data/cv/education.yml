@@ -3,7 +3,9 @@ order: 2
 items:
   - name: Toyota Technological Institute at Chicago
     description: >-
-      Ph.D., Computer Science
+      Ph.D., Computer Science.
+      Advisor: Yury Makarychev</br>
+      M.S., Computer Science.
     time: '2020 - 2025, planned'
   - name: University of California, Berkeley
     # location: CA
