@@ -20,8 +20,8 @@ export default function Home() {
         <div className="mt-3">
           Also see my <a href="https://scholar.google.com/citations?user=f0tA2foAAAAJ" className="text-blue-600 hover:text-blue-400 transition">Google Scholar</a>.
         </div>
-        {papers.map(paper => {
-          return <div className="mt-5">
+        {papers.map((paper, i) => {
+          return <div className="mt-5" key={i}>
             <div className="font-bold">
               {paper.title}
             </div>
