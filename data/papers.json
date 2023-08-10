@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Streaming Algorithms for Ellipsoidal Approximation of Convex Polytopes",
+    "authors": [
+      "Yury Makarychev",
+      "Naren Manoj",
+      "Max Ovsiankin"
+    ],
+    "venue": "COLT 2022",
+    "link": {
+      "title": "arXiv",
+      "url": "https://arxiv.org/abs/2206.07250"
+    }
+  },
+  {
+    "title": "Efficient Post-Quantum SNARKs for RSIS and RLWE and their Applications to Privacy",
+    "authors": [
+      "Cecilia Boschini",
+      "Jan Camenisch",
+      "Max Ovsiankin",
+      "Nicholas Spooner"
+    ],
+    "venue": "PQCrypto 2020",
+    "link": {
+      "title": "IACR ePrint",
+      "url": "https://eprint.iacr.org/2020/1190"
+    }
+  }
+]

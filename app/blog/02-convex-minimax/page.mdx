@@ -1,0 +1,99 @@
+import { Theorem, PostLayout, metad } from '../components'
+
+export const meta = {
+  title: "Convexity and Minimaxity",
+  date: "August 10th, 2023"
+};
+
+export const metadata = metad(meta);
+
+## Saddle points
+Consider a two-player zero sum game, where there is a player $x \in X \subseteq \R^n$
+that wishes to maximize the value of the game and another player $y \in Y \subseteq \R^m$
+that wishes to minimize it. We can model the value of the game as a function $f \colon X \times Y \to \R$.
+Without any assumptions on $f$, we get the following inequality, called the [max-min inequality](https://en.wikipedia.org/wiki/Max–min_inequality):
+$$
+\min_{x \in X} \max_{y \in Y} f(x, y) \geq \max_{y \in Y} \min_{x \in X} f(x, y)
+$$
+We can interpret the sides of this inequality as follows. On the right hand side, $y$ makes the first move, followed by $x$, who has knowledge of $y$'s move.
+On the left hand side, $x$ makes the first move, and $y$ follows with knowledge of $x$'s move.
+Intuitively, it is better for you if you play after your opponent, and this is what the max-min inequality says.
+
+A key question is existence of saddle-point.
+
+We say $f$ is _convex-concave_ if 
+$f(\cdot, y) \colon X \to \R$ for each $y \in Y$ and $f(x, \cdot)$ is concave for each $x \in X$.
+[^1]
+
+In this setting, we have the following, Von Neumann's [Minimax theorem](https://en.wikipedia.org/wiki/Minimax_theorem).
+<Theorem>
+  If $X$ and $Y$ are compact convex sets and $f$ is convex-concave, then we have
+  $$
+  \min_{x \in X} \max_{y \in Y} f(x, y) = \max_{y \in Y} \min_{x \in X} f(x, y)
+  $$
+</Theorem>
+In fact there exists a generalization of this theorem to quasiconcave functions called [Sion's minimax theorem](https://en.wikipedia.org/wiki/Sion%27s_minimax_theorem),
+although I will not use it any further in this post.
+
+## Lagrangian duality as a saddle-point
+
+Let $f_0, f_1, \ldots, f_m \colon X \to \R$ be convex functions, defined on a convex domain $X$.
+We consider convex optimization problems in the following standard form:
+$$
+\begin{align*}
+  \min \ & f_0(x) \\
+  \text{s.t. } & f_i(x) \leq 0 \qquad \forall i \in \{1, \ldots, m\}
+\end{align*}
+$$
+Denote the optimal value of this convex optimization by $p^*$.
+As is standard in convex optimization, we define a quantity, the _Lagrangian_ $\mathcal{L}(x, \lambda)$ for $\lambda \in \R_{\geq 0}^m$
+as follows:
+
+$$
+  \mathcal{L}(x, \lambda) = f_0(x) + \sum_{i=1}^m \lambda_i f_i(x)
+$$
+
+Observe that if $f_i(x) > 0$ for any $i$, then taking $\lambda_i \to +\infty$
+we can make $\mathcal{L}(x, \lambda)$ arbitrarily large.
+Thus we may actually think of the optimization problem above as a two-player game,
+where $x$ (the 'primal player') plays first trying to minimize the optimization problem, and $\lambda$ (the 'dual player') plays second trying to maximize it.
+Then we have
+$$
+  \begin{align*}
+  p^* &= \min_{x \in X} \max_{\lambda \geq 0} \mathcal{L}(x, \lambda) & \text{by above}\\
+  &\geq \max_{\lambda \geq 0} \min_{x \in X} \mathcal{L}(x, \lambda) & \text{max-min inequality}\\
+  &= d^*
+  \end{align*}
+$$
+In the last line, we define $d^*$ to be the value of $\max_{\lambda \geq 0} \min_{x \in X} \mathcal{L}(x, \lambda)$,
+the _Lagrangian dual_ optimization problem.
+In contrast, we call the original optimization problem the _primal_.
+By applying the max-min inequality, we have just shown _weak duality_, that $p^* \geq d^*$.
+
+In convex optimization, we have a very famous form of a minimax theorem (although for some reason, I almost never see it called that).
+It is [Slater's condition](https://en.wikipedia.org/wiki/Slater%27s_condition):
+<Theorem>
+  If there exists $x \in X$ such that $f_i(x) < 0$ for all $i \in \{1, \ldots, m\}$, then $p^* = d^*$.
+  For any $i \in \{1, \ldots, m\}$, if $f_i$ is linear, we only require $f_i(x) \leq 0$.
+</Theorem>
+In convex optimization the situation where $p^* = d^*$, but I really think of it as just a minimax theorem.
+To make the phrasing as a minimax theorem more clear, we can write the conclusion as a formula:
+$$
+  \min_{x \in X} \max_{\lambda \geq 0} \mathcal{L}(x, \lambda) = \max_{\lambda \geq 0} \min_{x \in X} \mathcal{L}(x, \lambda)
+$$
+Despite the obvious similarity in the statement of the theorem, this theorem is not directly comparable to von Neumann's minimax theorem.
+We can immediately observe the following differences:
+1. $\mathcal{L}(x, \lambda)$ is a convex-_linear_ function, not just convex-concave.
+2. $Y = \R_{\geq 0}^m$ is fixed in Slater's condition, while in von Neumann's minimax theorem it can be any compact convex set.
+3. We place a condition on $X$ that is often merely technical in applications: that there exists some point $x \in X$ that is strictly feasible with respect to the constraints $f_1, \ldots, f_m$.
+4. $X$ is allowed to be any convex set, namely, it need not be compact (i.e. bounded). $Y$ is not bounded either!
+
+I find it quite interesting, though, that given we also require the first 3 conditions to be true (the last of which does not usually cause trouble), we get an 'unbounded' version of the minimax theorem.
+
+## Stranger duals
+
+To be continued
+
+[^1]: [LJJ20](http://proceedings.mlr.press/v125/lin20a/lin20a.pdf)
+
+export default ({ children }) => <PostLayout meta={meta}>{children}</PostLayout>

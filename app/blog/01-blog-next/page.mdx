@@ -1,0 +1,29 @@
+import { PostLayout, metad } from '../components';
+
+export const meta = {
+  title: "Writing a blog with next.js",
+  date: "August 9th, 2023"
+};
+
+export const metadata = metad(meta);
+
+Previous blog was horrible jekyll mess.
+Lots of such messes, for course websites.
+Wanted to see if the node ecosystem would offer any better.
+I think it may have
+
+Took my inspiration from the following sources:
+
+- https://github.com/lydhr/NextJSAcademicTheme
+- https://academicpages.github.io
+- https://www.joshwcomeau.com/blog/how-i-built-my-blog/
+
+In addition to nextjs which is quite cool, also used
+
+- https://tailwindcss.com/docs/typography-plugin
+- https://mdxjs.com
+- https://github.com/remarkjs/remark-math
+- https://katex.org
+
+export default ({ children }) => <PostLayout meta={meta}>{children}</PostLayout>
+
