@@ -6,7 +6,7 @@ const MY_NAME = 'Max Ovsiankin';
 
 export default function Home() {
   return (
-    <div className="max-w-4xl py-12 m-auto">
+    <div className="max-w-4xl px-4 py-12 m-auto">
       <div className="flex items-center">
         <Image className="w-56 h-56 mr-8 rounded-full" src="/profile.jpg" alt={`${MY_NAME}`} width="320" height="320"/>
         <div className="flex-grow prose prose-a:no-underline prose-a:text-blue-600 hover:prose-a:text-blue-400 prose-a:transition prose-headings:font-bold prose-h1:mb-0 leading-normal max-w-none">
@@ -16,8 +16,9 @@ export default function Home() {
         </div>
       </div>
       <div className="mt-14">
-        <h2 className="font-bold text-2xl">Papers (α-β order)</h2>
+        <h2 className="font-bold text-2xl">Publications</h2>
         <div className="mt-3">
+          All authors are in α-β order as is customary in TCS.
           Also see my <a href="https://scholar.google.com/citations?user=f0tA2foAAAAJ" className="text-blue-600 hover:text-blue-400 transition">Google Scholar</a>.
         </div>
         {papers.map((paper, i) => {

@@ -28,7 +28,7 @@ export function PostLayout({
   meta
 }: PostLayoutProps) {
   return (
-    <div className="max-w-4xl py-12 m-auto">
+    <div className="max-w-4xl px-4 py-12 m-auto">
       <h1 className="font-bold text-4xl mb-2">{meta.title}</h1>
       <h3 className="text-gray-500 text-lg">{meta.date}</h3>
       <div className="mt-6">

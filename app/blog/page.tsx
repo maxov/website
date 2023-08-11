@@ -35,20 +35,25 @@ export default async function Blog() {
   const posts = await getPosts();
 
   return <>
-    <div className="max-w-4xl py-12 m-auto">
+    <div className="max-w-4xl px-4 py-12 m-auto">
       <h1 className="font-bold text-4xl mb-2">Theory Will Only Take You So Far</h1>
-      <p className="text-gray-500 text-lg">Max Ovsiankin&apos;s theoretical (computer science blog)</p>
+      <p className="text-gray-500 text-lg">Max Ovsiankin&apos;s theoretical computer science blog</p>
       <div className="mt-5">
         {posts.map(post => {
-          return <Link href={`/blog/${post.meta.slug}/`} passHref key={post.meta.slug}>
-            <div className="py-2 flex justify-between align-middle gap-2">
-              <div>
-                <h2 className="text-xl font-bold">{post.meta.title}</h2>
+          return <Link href={`/blog/${post.meta.slug}/`} passHref key={post.meta.slug} className="hover:text-gray-600 transition">
+            <div className="py-4">
+              <div className="flex justify-between align-middle gap-2">
+                <div>
+                  <h2 className="text-xl font-bold">{post.meta.title}</h2>
+                </div>
+                <div className="my-auto text-gray-500">
+                  <p>{post.meta.date}</p>
+                </div>
               </div>
-              <div className="my-auto text-gray-500">
-                <p>{post.meta.date}</p>
-              </div>
-            </div>
+              {post.meta.description && <div className="text-gray-700">
+                {post.meta.description}
+              </div>}
+            </div>        
           </Link>;
         })}
       </div>

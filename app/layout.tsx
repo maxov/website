@@ -19,14 +19,14 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
       <header className="bg-transparent sticky backdrop-blur-md top-0 right-0 left-0 border-b border-slate-200 z-50">
-        <div className="max-w-4xl m-auto flex">
+        <div className="max-w-4xl px-4 m-auto flex">
           <div className="font-bold py-5">
-            <Link href="/">Home</Link>
+            <Link href="/" className="transition hover:text-gray-600">Home</Link>
           </div>
           <div className="flex-grow"></div>
           <div className="font-bold py-5">
-            <Link href="/blog/" className="mr-8">Blog</Link>
-            <Link href="/cv/">CV</Link>
+            <Link href="/blog/" className="mr-8 transition hover:text-gray-600">Blog</Link>
+            <Link href="/cv/" className="transition hover:text-gray-600">CV</Link>
           </div>
         </div> 
       </header>
