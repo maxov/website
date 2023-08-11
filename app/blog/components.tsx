@@ -32,7 +32,8 @@ export function PostLayout({
       <h1 className="font-bold text-4xl mb-2">{meta.title}</h1>
       <h3 className="text-gray-500 text-lg">{meta.date}</h3>
       <div className="mt-6">
-      <article className="prose prose-a:no-underline prose-a:text-blue-600 hover:prose-a:text-blue-400 prose-a:transition prose-headings:font-bold max-w-none prose-h2:mt-4">
+      <article className="prose prose-a:no-underline prose-a:text-blue-600 hover:prose-a:text-blue-400 prose-a:transition prose-headings:font-bold max-w-none prose-h2:mt-4
+      prose-headings:a:text-black">
         {children}
       </article>
       </div>

@@ -2,12 +2,19 @@ import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 import nextMDX from '@next/mdx';
 import remarkGfm from 'remark-gfm';
+import remarkToc from 'remark-toc';
+import rehypeSlug from 'rehype-slug';
+import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 
 const withMDX = nextMDX({
   extension: /\.mdx?$/,
   options: {
-    remarkPlugins: [remarkMath, remarkGfm],
-    rehypePlugins: [rehypeKatex]
+    remarkPlugins: [remarkMath, remarkGfm, remarkToc],
+    rehypePlugins: [rehypeKatex, rehypeSlug, 
+      [rehypeAutolinkHeadings, {
+        behavior: 'wrap'
+      }]
+    ]
   }
 });
 

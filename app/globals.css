@@ -25,3 +25,19 @@ body {
     )
     rgb(var(--background-start-rgb));
 } */
+
+.prose h2 a {
+  color: black;
+}
+
+.prose h2 a:hover {
+  color: #4b5563;
+}
+
+.prose h3 a {
+  color: black;
+}
+
+.prose h3 a:hover {
+  color: #4b5563;
+}
