@@ -12,7 +12,7 @@ export default function Home() {
         <div className="flex-grow prose prose-a:no-underline prose-a:text-blue-600 hover:prose-a:text-blue-400 prose-a:transition prose-headings:font-bold prose-h1:mb-0 leading-normal max-w-none">
           <h1 className="">{MY_NAME}</h1>
           <Content/>
-          <p>Email: 09.midline_panting at icloud.com</p>
+          <p>Email: maxov@ttic.edu</p>
         </div>
       </div>
       <div className="mt-14">

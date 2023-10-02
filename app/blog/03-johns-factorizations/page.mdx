@@ -1,0 +1,40 @@
+import { PostLayout, metad, Theorem } from '../components';
+
+export const meta = {
+  title: "John's theorem and factorizations of linear operators",
+  date: "August 20th, 2023",
+  description: "In which I discuss john's theorem and other stuff"
+};
+
+export const metadata = metad(meta);
+
+## The correspondence between convex sets and finite dimensional Banach spaces
+Let $K \subseteq \R^n$ be a symmetric compact convex set with nonempty interior.
+Such a convex set is called a _convex body_.
+We can associate a norm with $K$, called the _gauge_ of $K$, as follows:
+
+$$
+\|x\|_K = \inf \{t \geq 0 \mid x \in t K\}
+$$
+
+It readily follows that $\| \cdot \|_K$ is the norm such that $K$ is the unit ball of that norm.
+A finite dimensional Banach space is essentially $\R^n$ using some $K$ as the gauge of a norm.
+Further, the unit ball of any Banach space is a convex body; thus symmetric convex sets and finite dimensional Banach spaces are practically interchangeable.
+The prototypical example is $\ell_2^n$, whose unit ball is the regular 'spherical' ball
+$\{x \in \R^n \mid \sum_{i=1}^n x_i^2 \leq 1\}$.
+This correspondence lets us translate inequalities with applications to functional analysis to nice (at least in my opinion) geometric statements about the relations of different convex bodies to each other.
+
+## Factorizations
+<Theorem subtitle="Dvoretzky-Rogers Lemma">
+  Let $(X, \|\cdot\|_X)$ be an $n$-dimensional Banach space. Then there exists a set of $m = \sqrt{n}$ vectors $x_1, \ldots, x_m \in \R^n$ such that for all
+  $t_1, \ldots, t_m \in \R$
+  $$
+  \max_{1 \leq i \leq m} |t_i| \leq \left\| \sum_{i=1}^m t_i x_i \right\|_X \leq C \cdot \left(\sum_{i=1}^m t_i^2 \right)^{1/2}
+  $$
+  where $C > 0$ is a universal constant.
+</Theorem>
+
+
+
+export default ({ children }) => <PostLayout meta={meta}>{children}</PostLayout>
+
