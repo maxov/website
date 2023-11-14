@@ -1,5 +1,22 @@
 [
   {
+    "title": "The Change-of-Measure Method, Block Lewis Weights, and Approximating Matrix Block Norms",
+    "year": 2023,
+    "authors": [
+      "Naren Manoj",
+      "Max Ovsiankin"
+    ]
+  },
+  {
+    "title": "Near-Optimal Streaming Ellipsoidal Rounding for General Convex Polytopes",
+    "year": 2023,
+    "authors": [
+      "Yury Makarychev",
+      "Naren Manoj",
+      "Max Ovsiankin"
+    ]
+  },
+  {
     "title": "Streaming Algorithms for Ellipsoidal Approximation of Convex Polytopes",
     "authors": [
       "Yury Makarychev",
@@ -7,6 +24,7 @@
       "Max Ovsiankin"
     ],
     "venue": "COLT 2022",
+    "year": 2022,
     "link": {
       "title": "arXiv",
       "url": "https://arxiv.org/abs/2206.07250"
@@ -21,6 +39,7 @@
       "Nicholas Spooner"
     ],
     "venue": "PQCrypto 2020",
+    "year": 2020,
     "link": {
       "title": "IACR ePrint",
       "url": "https://eprint.iacr.org/2020/1190"
