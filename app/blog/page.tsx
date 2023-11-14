@@ -39,7 +39,7 @@ export default async function Blog() {
       <h1 className="font-bold text-4xl mb-2">Theory Will Only Take You So Far</h1>
       <p className="text-gray-500 text-lg">Max Ovsiankin&apos;s mathematics and theoretical computer science blog</p>
       <div className="mt-5">
-        {posts.map(post => {
+        {posts.filter(post => !post.meta.draft).map(post => {
           return <Link href={`/blog/${post.meta.slug}/`} passHref key={post.meta.slug} className="hover:text-gray-600 transition">
             <div className="py-4">
               <div className="flex justify-between align-middle gap-2">
