@@ -5,7 +5,11 @@
     "authors": [
       "Naren Manoj",
       "Max Ovsiankin"
-    ]
+    ],
+    "link": {
+      "title": "arXiv",
+      "url": "https://arxiv.org/abs/2311.10013"
+    }
   },
   {
     "title": "Near-Optimal Streaming Ellipsoidal Rounding for General Convex Polytopes",
@@ -14,7 +18,11 @@
       "Yury Makarychev",
       "Naren Manoj",
       "Max Ovsiankin"
-    ]
+    ],
+    "link": {
+      "title": "arXiv",
+      "url": "https://arxiv.org/abs/2311.09460"
+    }
   },
   {
     "title": "Streaming Algorithms for Ellipsoidal Approximation of Convex Polytopes",
