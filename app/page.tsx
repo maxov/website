@@ -72,7 +72,7 @@ export default function Home() {
                     <span>
                     {paper.authors.map((author, i) => {
                       const authorEl =
-                        author === MY_NAME ? <span className="italic">MO</span> : author;
+                        author === MY_NAME ? <span className="font-bold">MO</span> : author;
                       return <>{authorEl}{i < paper.authors.length - 1 && ', '}</>;
                     })}{'. '}
                     </span>
