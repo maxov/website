@@ -1,11 +1,21 @@
 [
   {
+    "title": "Approximation Algorithms for ℓp-Shortest Path and ℓp-Group Steiner Tree",
+    "year": 2024,
+    "authors": [
+      "Yury Makarychev",
+      "Max Ovsiankin",
+      "Erasmo Tani"
+    ]
+  },
+  {
     "title": "The Change-of-Measure Method, Block Lewis Weights, and Approximating Matrix Block Norms",
     "year": 2023,
     "authors": [
       "Naren Manoj",
       "Max Ovsiankin"
     ],
+    "venue": "STOC 2024",
     "link": {
       "title": "arXiv",
       "url": "https://arxiv.org/abs/2311.10013"

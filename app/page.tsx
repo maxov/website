@@ -45,23 +45,26 @@ export default function Home() {
         <div className="flex-grow prose prose-a:no-underline prose-a:text-blue-600 hover:prose-a:text-blue-400 prose-a:transition prose-headings:font-bold prose-h1:mb-0 leading-normal max-w-none">
           <h1 className="">{MY_NAME}</h1>
           <Content/>
-          <p>Email: [concat ma and xov] at ttic dot edu</p>
+          <p>
+          (he/him)<br/>
+            Email: [concat ma and xov] at ttic dot edu
+          </p>
         </div>
       </div>
       <div className="mt-14">
         <h2 className="font-bold text-2xl">Publications</h2>
         <div className="mt-3">
-          All authors are in α-β order as is customary in TCS.
+          {/* All authors are in α-β order as is customary in TCS. */}
           Also see my <a href="https://scholar.google.com/citations?user=f0tA2foAAAAJ" className="text-blue-600 hover:text-blue-400 transition">Google Scholar</a>.
         </div>
         {groupedPapers.map((group, i) => {
-          return <div className="mt-5" key={i}>
-            <div className="font-bold text-lg">
+          return <div className="" key={i}>
+            {/* <div className="font-bold text-lg">
               {group.year}
-            </div>
+            </div> */}
             {
               group.papers.map((paper, i) => {
-                return <div className="mt-2" key={i}>
+                return <div className="mt-3" key={i}>
                   <div className="font-bold">
                     {paper.title}
                   </div>
@@ -69,7 +72,7 @@ export default function Home() {
                     <span>
                     {paper.authors.map((author, i) => {
                       const authorEl =
-                        author === MY_NAME ? <span className="font-bold">MO</span> : author;
+                        author === MY_NAME ? <span className="italic">MO</span> : author;
                       return <>{authorEl}{i < paper.authors.length - 1 && ', '}</>;
                     })}{'. '}
                     </span>
