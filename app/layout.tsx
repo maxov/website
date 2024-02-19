@@ -26,7 +26,7 @@ export default function RootLayout({
           <div className="flex-grow"></div>
           <div className="font-bold py-5">
             <Link href="/blog/" className="mr-8 transition hover:text-gray-600">Blog</Link>
-            <Link href="/cv/" className="transition hover:text-gray-600">CV</Link>
+            <Link href="/cv.pdf" className="transition hover:text-gray-600">CV</Link>
           </div>
         </div> 
       </header>
